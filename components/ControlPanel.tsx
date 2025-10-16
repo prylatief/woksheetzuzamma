@@ -177,7 +177,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({ config, setConfig, o
             </label>
           ))}
         </div>
-      </section>
+      </Section>
 
       <Section title="Edit Header Worksheet">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
