@@ -55,11 +55,35 @@ export const WorksheetPage: React.FC<WorksheetPageProps> = ({ config, surah, chi
         <header className="border-b-4 border-gray-800 pb-4 mb-6">
           <div className="flex justify-between items-center">
             <div className="w-1/2">
-              <div className="grid grid-cols-1 gap-y-2 text-sm">
-                <div className="flex items-baseline"><span className="font-bold w-28">Nama Sekolah:</span><span className="border-b border-gray-500 flex-1">{header.schoolName}</span></div>
-                <div className="flex items-baseline"><span className="font-bold w-28">Kelas:</span><span className="border-b border-gray-500 flex-1">{header.className}</span></div>
-                <div className="flex items-baseline"><span className="font-bold w-28">Nama:</span><span className="border-b border-gray-500 flex-1"></span></div>
-                 <div className="flex items-baseline"><span className="font-bold w-28">Nilai:</span><span className="border-b border-gray-500 flex-1"></span></div>
+              <div className="grid grid-cols-1 gap-y-3 text-sm">
+                <div className="flex items-baseline gap-x-2">
+                  <span className="font-bold w-28 flex-shrink-0">Nama Sekolah:</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="pb-1 break-words leading-tight">{header.schoolName}</div>
+                    <div className="border-b border-gray-500"></div>
+                  </div>
+                </div>
+                <div className="flex items-baseline gap-x-2">
+                  <span className="font-bold w-28 flex-shrink-0">Kelas:</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="pb-1 break-words leading-tight">{header.className}</div>
+                    <div className="border-b border-gray-500"></div>
+                  </div>
+                </div>
+                <div className="flex items-baseline gap-x-2">
+                  <span className="font-bold w-28 flex-shrink-0">Nama:</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="pb-1 min-h-[1.25rem]"></div>
+                    <div className="border-b border-gray-500"></div>
+                  </div>
+                </div>
+                 <div className="flex items-baseline gap-x-2">
+                  <span className="font-bold w-28 flex-shrink-0">Nilai:</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="pb-1 min-h-[1.25rem]"></div>
+                    <div className="border-b border-gray-500"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="w-1/2 flex justify-end items-center gap-4">
