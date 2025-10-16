@@ -1,9 +1,13 @@
-
 {
   "name": "quran-worksheet-generator",
   "version": "1.0.0",
   "private": true,
   "description": "A no-AI worksheet generator for Juz 30 and Al-Fatihah, designed for children.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -13,6 +17,8 @@
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "vite": "^5.3.1",
+    "@vitejs/plugin-react": "^4.3.1"
   }
 }
