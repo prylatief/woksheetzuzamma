@@ -21,7 +21,7 @@ const ActivityWrapper: React.FC<ActivityWrapperProps> = ({ title, children, isAn
 
 const Tracing: React.FC<{ ayahs: Ayah[] }> = ({ ayahs }) => (
   <ActivityWrapper title={ACTIVITY_NAMES.tracing}>
-    <div className="space-y-6 text-right" dir="rtl">
+    <div className="space-y-12 text-right" dir="rtl">
       {ayahs.map(ayah => (
         <p key={ayah.ayah} className="font-quran text-5xl text-transparent" style={{ WebkitTextStroke: '1.5px #9ca3af' }}>
           {ayah.text}
