@@ -829,12 +829,12 @@ export const quranData: QuranData = {
     number: 114,
     name: "الناس",
     latin: "An-Nas",
-    ayahs: [
+      ayahs: [
       { ayah: 1, text: "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ", translation: "Katakanlah, “Aku berlindung kepada Tuhannya manusia,", words: [{text: "قُلْ", translation: "Katakanlah"}, {text: "أَعُوذُ", translation: "aku berlindung"}, {text: "بِرَبِّ", translation: "kepada Tuhan"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
       { ayah: 2, text: "مَلِكِ ٱلنَّاسِ", translation: "Raja manusia,", words: [{text: "مَلِكِ", translation: "Raja"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
       { ayah: 3, text: "إِلَٰهِ ٱلنَّاسِ", translation: "sembahan manusia,", words: [{text: "إِلَٰهِ", translation: "Sembahan"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
-      { ayah: 4, text: "مِن شَرِّ ٱلْوَsْوَاسِ ٱلْخَنَّاسِ", translation: "dari kejahatan (bisikan) setan yang bersembunyi,", words: [{text: "مِن شَرِّ", translation: "dari kejahatan"}, {text: "ٱلْوَsْوَاسِ", translation: "bisikan"}, {text: "ٱلْخَنَّاسِ", translation: "yang biasa bersembunyi"}] },
-      { ayah: 5, text: "ٱلَّذِى يُوَsْوِسُ فِى صُدُورِ ٱلنَّاسِ", translation: "yang membisikkan (kejahatan) ke dalam dada manusia,", words: [{text: "ٱلَّذِى", translation: "Yang"}, {text: "يُوَsْوِسُ", translation: "membisikkan"}, {text: "فِى صُدُورِ", translation: "ke dalam dada"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
+      { ayah: 4, text: "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ", translation: "dari kejahatan (bisikan) setan yang bersembunyi,", words: [{text: "مِن شَرِّ", translation: "dari kejahatan"}, {text: "ٱلْوَسْوَاسِ", translation: "bisikan"}, {text: "ٱلْخَنَّاسِ", translation: "yang biasa bersembunyi"}] },
+      { ayah: 5, text: "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ", translation: "yang membisikkan (kejahatan) ke dalam dada manusia,", words: [{text: "ٱلَّذِى", translation: "Yang"}, {text: "يُوَسْوِسُ", translation: "membisikkan"}, {text: "فِى صُدُورِ", translation: "ke dalam dada"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
       { ayah: 6, text: "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ", translation: "dari (golongan) jin dan manusia.”", words: [{text: "مِنَ", translation: "dari"}, {text: "ٱلْجِنَّةِ", translation: "jin"}, {text: "وَٱلنَّاسِ", translation: "dan manusia"}] }
     ]
   }
