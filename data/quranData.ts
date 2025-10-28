@@ -232,41 +232,41 @@ export const quranData: QuranData = {
     latin: "Al-Mutaffifin", 
     ayahs: [
         { ayah: 1, text: "وَيْلٌ لِّلْمُطَفِّفِينَ", translation: "Celakalah bagi orang-orang yang curang (dalam menakar dan menimbang)!", words: [] },
-        { ayah: 2, text: "ٱلَّذِينَ إِذَا ٱkْتَالُوا۟ عَلَى ٱlnَّاسِ يَسْتَوْفُونَ", translation: "Yaitu) orang-orang yang apabila menerima takaran dari orang lain mereka minta dicukupkan,", words: [] },
-        { ayah: 3, text: "وَإِذَا كَالُوهُمْ أَو wَّزَنُوهُمْ يُخْسِرُونَ", translation: "dan apabila mereka menakar atau menimbang (untuk orang lain), mereka mengurangi.", words: [] },
-        { ayah: 4, text: "أَلَا يَظُنُّ أُو۟لَٰٓئِكَ أَنَّهُم mَّبْعُوثُونَ", translation: "Tidakkah mereka itu mengira, bahwa sesungguhnya mereka akan dibangkitkan,", words: [] },
+        { ayah: 2, text: "ٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ", translation: "(Yaitu) orang-orang yang apabila menerima takaran dari orang lain mereka minta dicukupkan,", words: [] },
+        { ayah: 3, text: "وَإِذَا كَالُوهُمْ أَوْ وَزَنُوهُمْ يُخْسِرُونَ", translation: "dan apabila mereka menakar atau menimbang (untuk orang lain), mereka mengurangi.", words: [] },
+        { ayah: 4, text: "أَلَا يَظُنُّ أُو۟لَٰٓئِكَ أَنَّهُم مَّبْعُوثُونَ", translation: "Tidakkah mereka itu mengira bahwa sesungguhnya mereka akan dibangkitkan,", words: [] },
         { ayah: 5, text: "لِيَوْمٍ عَظِيمٍ", translation: "pada suatu hari yang besar,", words: [] },
-        { ayah: 6, text: "يَوْمَ يَقُومُ ٱlnَّاسُ لِرَبِّ ٱلْعَٰلَمِينَ", translation: "(yaitu) pada hari (ketika) semua orang bangkit menghadap Tuhan seluruh alam.", words: [] },
+        { ayah: 6, text: "يَوْمَ يَقُومُ ٱلنَّاسُ لِرَبِّ ٱلْعَٰلَمِينَ", translation: "(yaitu) pada hari (ketika) semua orang bangkit menghadap Tuhan seluruh alam.", words: [] },
         { ayah: 7, text: "كَلَّآ إِنَّ كِتَٰبَ ٱلْفُجَّارِ لَفِى سِجِّينٍ", translation: "Sekali-kali jangan begitu! Sesungguhnya catatan orang yang durhaka benar-benar tersimpan dalam Sijjin.", words: [] },
         { ayah: 8, text: "وَمَآ أَدْرَىٰكَ مَا سِجِّينٌ", translation: "Dan tahukah engkau apakah Sijjin itu?", words: [] },
-        { ayah: 9, text: "كِتَٰبٌ mَّرْقُومٌ", translation: "(Ialah) kitab yang berisi catatan (amal).", words: [] },
+        { ayah: 9, text: "كِتَٰبٌ مَّرْقُومٌ", translation: "(Ialah) kitab yang berisi catatan (amal).", words: [] },
         { ayah: 10, text: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ", translation: "Celakalah pada hari itu, bagi orang-orang yang mendustakan!", words: [] },
-        { ayah: 11, text: "ٱلَّذِينَ يُكَذِّبُونَ بِيَوْمِ ٱldِّینِ", translation: "(yaitu) orang-orang yang mendustakannya (hari pembalasan).", words: [] },
+        { ayah: 11, text: "ٱلَّذِينَ يُكَذِّبُونَ بِيَوْمِ ٱلدِّينِ", translation: "(Yaitu) orang-orang yang mendustakan (hari pembalasan).", words: [] },
         { ayah: 12, text: "وَمَا يُكَذِّبُ بِهِۦٓ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ", translation: "Dan tidak ada yang mendustakannya (hari pembalasan) kecuali setiap orang yang melampaui batas dan berdosa,", words: [] },
-        { ayah: 13, text: "إِذَا تُتْلَىٰ عَلَيْهِ ءَايَٰتُنَا قَالَ أَسَٰطِيرُ ٱلْأَوَّلِينَ", translation: "yang apabila dibacakan kepadanya ayat-ayat Kami, dia berkata, “Itu adalah dongeng orang-orang dahulu.”", words: [] },
-        { ayah: 14, text: "كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم mَّا كَانُوا۟ يَكْسِبُونَ", translation: "Sekali-kali tidak! Bahkan apa yang mereka kerjakan itu telah menutupi hati mereka.", words: [] },
-        { ayah: 15, text: "كَلَّآ إِنَّهُمْ عَن rَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ", translation: "Sekali-kali tidak! Sesungguhnya mereka pada hari itu benar-benar terhalang dari (melihat) Tuhannya.", words: [] },
+        { ayah: 13, text: "إِذَا تُتْلَىٰ عَلَيْهِ ءَايَٰتُنَا قَالَ أَسَٰطِيرُ ٱلْأَوَّلِينَ", translation: "Yang apabila dibacakan kepadanya ayat-ayat Kami, dia berkata, 'Itu adalah dongeng orang-orang dahulu.'", words: [] },
+        { ayah: 14, text: "كَلَّا بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ يَكْسِبُونَ", translation: "Sekali-kali tidak! Bahkan apa yang mereka kerjakan itu telah menutupi hati mereka.", words: [] },
+        { ayah: 15, text: "كَلَّآ إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ", translation: "Sekali-kali tidak! Sesungguhnya mereka pada hari itu benar-benar terhalang dari (melihat) Tuhannya.", words: [] },
         { ayah: 16, text: "ثُمَّ إِنَّهُمْ لَصَالُوا۟ ٱلْجَحِيمِ", translation: "Kemudian, sesungguhnya mereka benar-benar masuk neraka.", words: [] },
-        { ayah: 17, text: "ثُمَّ يُقَالُ هَٰذَا ٱlَّذِى كُntُم بِهِۦ تُكَذِّبُونَ", translation: "Kemudian, dikatakan (kepada mereka), “Inilah (azab) yang dahulu kamu dustakan.”", words: [] },
+        { ayah: 17, text: "ثُمَّ يُقَالُ هَٰذَا ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ", translation: "Kemudian, dikatakan (kepada mereka), 'Inilah (azab) yang dahulu kamu dustakan.'", words: [] },
         { ayah: 18, text: "كَلَّآ إِنَّ كِتَٰبَ ٱلْأَبْرَارِ لَفِى عِلِّيِّينَ", translation: "Sekali-kali tidak! Sesungguhnya catatan orang-orang yang berbakti benar-benar tersimpan dalam ’Illiyyin.", words: [] },
         { ayah: 19, text: "وَمَآ أَدْرَىٰكَ مَا عِلِّيُّونَ", translation: "Dan tahukah engkau apakah ’Illiyyin itu?", words: [] },
-        { ayah: 20, text: "كِتَٰبٌ mَّرْقُومٌ", translation: "(Ialah) kitab yang berisi catatan (amal).", words: [] },
-        { ayah: 21, text: "يَشْهَدُهُ ٱلْمُقَرَّبُونَ", translation: "yang disaksikan oleh (malaikat-malaikat) yang didekatkan (kepada Allah).", words: [] },
+        { ayah: 20, text: "كِتَٰبٌ مَّرْقُومٌ", translation: "(Ialah) kitab yang berisi catatan (amal).", words: [] },
+        { ayah: 21, text: "يَشْهَدُهُ ٱلْمُقَرَّبُونَ", translation: "Yang disaksikan oleh (malaikat-malaikat) yang didekatkan (kepada Allah).", words: [] },
         { ayah: 22, text: "إِنَّ ٱلْأَبْرَارِ لَفِى نَعِيمٍ", translation: "Sesungguhnya orang-orang yang berbakti benar-benar berada dalam (surga yang penuh) kenikmatan,", words: [] },
-        { ayah: 23, text: "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ", translation: "mereka (duduk) di atas dipan-dipan melepas pandangan.", words: [] },
-        { ayah: 24, text: "تَعْرِفُ فِى وُجُوهِهِمْ نَضْرَةَ ٱlnَّعِيمِ", translation: "Kamu dapat mengetahui dari wajah mereka kesenangan hidup yang penuh kenikmatan.", words: [] },
-        { ayah: 25, text: "يُsْقَوْنَ مِن rَّحِيقٍ mَّخْتُومٍ", translation: "Mereka diberi minum dari khamar murni (tidak memabukkan) yang (tempatnya) masih dilak (disegel).", words: [] },
-        { ayah: 26, text: "خِتَٰمُهُۥ مِسْكٌ ۚ وَفِى ذَٰلِكَ فَلْيَتَنَافَسِ ٱlْمُتَنَٰفِسُونَ", translation: "Laknya dari kasturi. Dan untuk yang demikian itu hendaknya orang berlomba-lomba.", words: [] },
-        { ayah: 27, text: "وَمِزَاجُهُۥ مِن تَsْنِيمٍ", translation: "Dan campurannya dari tasnim,", words: [] },
-        { ayah: 28, text: "عَيْنًا يَشْرَبُ بِهَا ٱلْمُقَرَّبُونَ", translation: "(yaitu) mata air yang diminum oleh mereka yang dekat (kepada Allah).", words: [] },
-        { ayah: 29, text: "إِنَّ ٱlَّذِينَ أَجْرَمُوا۟ كَانُوا۟ مِنَ ٱlَّذِينَ ءَامَنُوا۟ يَضْحَكُونَ", translation: "Sesungguhnya orang-orang yang berdosa, adalah mereka yang dahulu menertawakan orang-orang yang beriman.", words: [] },
-        { ayah: 30, text: "وَإِذَا مَرُّوا۟ بِهِمْ يَتَغَامَزُونَ", translation: "Dan apabila mereka (orang-orang yang beriman) melintas di hadapan mereka, mereka saling mengedip-ngedipkan matanya,", words: [] },
-        { ayah: 31, text: "وَإِذَا ٱnqَلَبُوٓا۟ إِلَىٰٓ أَهْلِهِمُ ٱnqَلَبُوا۟ فَكِهِينَ", translation: "dan apabila kembali kepada kaumnya, mereka kembali dengan gembira ria.", words: [] },
-        { ayah: 32, text: "وَإِذَا رَأَوْهُمْ قَالُوٓا۟ إِنَّ هَٰٓؤُلَآءِ لَضَآlُّونَ", translation: "Dan apabila mereka melihat (orang-orang mukmin), mereka mengatakan, “Sesungguhnya mereka benar-benar orang-orang yang sesat,”", words: [] },
-        { ayah: 33, text: "وَمَآ أُرْسِلُوا۟ عَلَيْهِمْ حَٰفِظِينَ", translation: "padahal (orang-orang yang berdosa itu), mereka tidak diutus sebagai penjaga (orang-orang mukmin).", words: [] },
-        { ayah: 34, text: "فَٱlْيَوْمَ ٱlَّذِينَ ءَامَنُوا۟ مِنَ ٱlْكُfَّارِ يَضْحَكُونَ", translation: "Maka pada hari ini, orang-orang yang beriman menertawakan orang-orang kafir,", words: [] },
-        { ayah: 35, text: "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ", translation: "mereka (duduk) di atas dipan-dipan melepas pandangan.", words: [] },
-        { ayah: 36, text: "هَلْ ثُوِّبَ ٱlْكُfَّارُ مَا كَانُوا۟ يَفْعَلُونَ", translation: "Apakah orang-orang kafir itu diberi balasan (setimpal) terhadap apa yang telah mereka perbuat?", words: [] }
+        { ayah: 23, text: "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ", translation: "Mereka (duduk) di atas dipan-dipan melepas pandangan.", words: [] },
+        { ayah: 24, text: "تَعْرِفُ فِى وُجُوهِهِمْ نَضْرَةَ ٱلنَّعِيمِ", translation: "Kamu dapat mengetahui dari wajah mereka kesenangan hidup yang penuh kenikmatan.", words: [] },
+        { ayah: 25, text: "يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ", translation: "Mereka diberi minum dari khamar murni (tidak memabukkan) yang (tempatnya) masih dilak (disegel).", words: [] },
+        { ayah: 26, text: "خِتَٰمُهُۥ مِسْكٌ ۚ وَفِى ذَٰلِكَ فَلْيَتَنَافَسِ ٱلْمُتَنَٰفِسُونَ", translation: "Laknya dari kasturi. Dan untuk yang demikian itu hendaknya orang berlomba-lomba.", words: [] },
+        { ayah: 27, text: "وَمِزَاجُهُۥ مِن تَسْنِيمٍ", translation: "Dan campurannya dari tasnim,", words: [] },
+        { ayah: 28, text: "عَيْنًا يَشْرَبُ بِهَا ٱلْمُقَرَّبُونَ", translation: "(Yaitu) mata air yang diminum oleh mereka yang dekat (kepada Allah).", words: [] },
+        { ayah: 29, text: "إِنَّ ٱلَّذِينَ أَجْرَمُوا۟ كَانُوا۟ مِنَ ٱلَّذِينَ ءَامَنُوا۟ يَضْحَكُونَ", translation: "Sesungguhnya orang-orang yang berdosa, adalah mereka yang dahulu menertawakan orang-orang yang beriman.", words: [] },
+        { ayah: 30, text: "وَإِذَا مَرُّوا۟ بِهِمْ يَتَغَامَزُونَ", translation: "Dan apabila mereka (orang-orang beriman) melintas di hadapan mereka, mereka saling mengedipkan mata.", words: [] },
+        { ayah: 31, text: "وَإِذَا ٱنقَلَبُوٓا۟ إِلَىٰٓ أَهْلِهِمُ ٱنقَلَبُوا۟ فَكِهِينَ", translation: "Dan apabila kembali kepada kaumnya, mereka kembali dengan gembira ria.", words: [] },
+        { ayah: 32, text: "وَإِذَا رَأَوْهُمْ قَالُوٓا۟ إِنَّ هَٰٓؤُلَآءِ لَضَآلُّونَ", translation: "Dan apabila mereka melihat (orang-orang mukmin), mereka mengatakan, 'Sesungguhnya mereka benar-benar orang yang sesat.'", words: [] },
+        { ayah: 33, text: "وَمَآ أُرْسِلُوا۟ عَلَيْهِمْ حَٰفِظِينَ", translation: "Padahal (orang-orang yang berdosa itu), mereka tidak diutus sebagai penjaga (atas orang-orang mukmin).", words: [] },
+        { ayah: 34, text: "فَٱلْيَوْمَ ٱلَّذِينَ ءَامَنُوا۟ مِنَ ٱلْكُفَّارِ يَضْحَكُونَ", translation: "Maka pada hari ini, orang-orang beriman menertawakan orang-orang kafir,", words: [] },
+        { ayah: 35, text: "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ", translation: "Mereka (duduk) di atas dipan-dipan melepas pandangan.", words: [] },
+        { ayah: 36, text: "هَلْ ثُوِّبَ ٱلْكُفَّارُ مَا كَانُوا۟ يَفْعَلُونَ", translation: "Apakah orang-orang kafir itu diberi balasan (setimpal) terhadap apa yang telah mereka perbuat?", words: [] }
     ]
   },
   84: { 
@@ -346,23 +346,23 @@ export const quranData: QuranData = {
     name: "الطارق", 
     latin: "At-Tariq", 
     ayahs: [
-        { ayah: 1, text: "وَٱlsَّمَآءِ وَٱlطَّارِقِ", translation: "Demi langit dan yang datang pada malam hari.", words: [] },
-        { ayah: 2, text: "وَمَآ أَدْرَىٰكَ مَا ٱlطَّارِقُ", translation: "Dan tahukah kamu apakah yang datang pada malam hari itu?", words: [] },
-        { ayah: 3, text: "ٱlnَّجْمُ ٱlثَّاقِبُ", translation: "(yaitu) bintang yang bersinar tajam,", words: [] },
-        { ayah: 4, text: "إِن كُلُّ نَفْسٍ lَّמَّا عَلَيْهَا حَافِظٌ", translation: "setiap orang pasti ada penjaganya.", words: [] },
-        { ayah: 5, text: "فَلْيَنظُرِ ٱlْإِnsَٰنُ مِمَّ خُلِقَ", translation: "Maka hendaklah manusia memperhatikan dari apa dia diciptakan.", words: [] },
-        { ayah: 6, text: "خُلِقَ مِن mَّآءٍ دَافِقٍ", translation: "Dia diciptakan dari air (mani) yang terpancar,", words: [] },
-        { ayah: 7, text: "يَخْرُجُ مِنۢ بَيْنِ ٱlصُّلْبِ وَٱltَّرَآئِبِ", translation: "yang keluar dari antara tulang sulbi (punggung) dan tulang dada.", words: [] },
+        { ayah: 1, text: "وَٱلسَّمَآءِ وَٱلطَّارِقِ", translation: "Demi langit dan yang datang pada malam hari.", words: [] },
+        { ayah: 2, text: "وَمَآ أَدْرَىٰكَ مَا ٱلطَّارِقُ", translation: "Dan tahukah kamu apakah yang datang pada malam hari itu?", words: [] },
+        { ayah: 3, text: "ٱلنَّجْمُ ٱلثَّاقِبُ", translation: "(yaitu) bintang yang bersinar tajam,", words: [] },
+        { ayah: 4, text: "إِن كُلُّ نَفْسٍ لَّمَّا عَلَيْهَا حَافِظٌ", translation: "Setiap orang pasti ada penjaganya.", words: [] },
+        { ayah: 5, text: "فَلْيَنظُرِ ٱلْإِنسَٰنُ مِمَّ خُلِقَ", translation: "Maka hendaklah manusia memperhatikan dari apa dia diciptakan.", words: [] },
+        { ayah: 6, text: "خُلِقَ مِن مَّآءٍ دَافِقٍ", translation: "Dia diciptakan dari air (mani) yang terpancar,", words: [] },
+        { ayah: 7, text: "يَخْرُجُ مِنۢ بَيْنِ ٱلصُّلْبِ وَٱلتَّرَآئِبِ", translation: "Yang keluar dari antara tulang sulbi (punggung) dan tulang dada.", words: [] },
         { ayah: 8, text: "إِنَّهُۥ عَلَىٰ رَجْعِهِۦ لَقَادِرٌ", translation: "Sungguh, Allah benar-benar kuasa untuk mengembalikannya (hidup setelah mati).", words: [] },
-        { ayah: 9, text: "يَوْمَ تُبْلَى ٱlsَّرَآئِرُ", translation: "Pada hari ditampakkan segala rahasia,", words: [] },
-        { ayah: 10, text: "فَمَا لَهُۥ مِن قُوَّةٍ وَلَا نَاصِرٍ", translation: "maka sekali-kali tidak ada bagi manusia itu suatu kekuatan pun dan tidak (pula) ada seorang penolong.", words: [] },
-        { ayah: 11, text: "وَٱlsَّمَآءِ ذَاتِ ٱrَّجْعِ", translation: "Demi langit yang mengandung hujan,", words: [] },
-        { ayah: 12, text: "وَٱlْأَرْضِ ذَاتِ ٱlصَّدْعِ", translation: "dan bumi yang mempunyai tumbuh-tumbuhan,", words: [] },
-        { ayah: 13, text: "إِنَّهُۥ لَقَوْلٌ فَصْلٌ", translation: "sungguh, (Al-Qur'an) itu benar-benar firman pemisah (antara yang hak dan yang batil),", words: [] },
-        { ayah: 14, text: "وَمَا هُوَ بِٱlْهَزْلِ", translation: "dan (Al-Qur'an) itu bukanlah senda gurau.", words: [] },
+        { ayah: 9, text: "يَوْمَ تُبْلَى ٱلسَّرَآئِرُ", translation: "Pada hari ditampakkan segala rahasia,", words: [] },
+        { ayah: 10, text: "فَمَا لَهُۥ مِن قُوَّةٍ وَلَا نَاصِرٍ", translation: "Maka sekali-kali tidak ada bagi manusia itu suatu kekuatan pun, dan tidak (pula) ada seorang penolong.", words: [] },
+        { ayah: 11, text: "وَٱلسَّمَآءِ ذَاتِ ٱلرَّجْعِ", translation: "Demi langit yang mengandung hujan,", words: [] },
+        { ayah: 12, text: "وَٱلْأَرْضِ ذَاتِ ٱلصَّدْعِ", translation: "Dan bumi yang mempunyai tumbuh-tumbuhan,", words: [] },
+        { ayah: 13, text: "إِنَّهُۥ لَقَوْلٌ فَصْلٌ", translation: "Sungguh, (Al-Qur'an) itu benar-benar firman yang memisahkan (antara yang hak dan batil).", words: [] },
+        { ayah: 14, text: "وَمَا هُوَ بِٱلْهَزْلِ", translation: "Dan (Al-Qur'an) itu bukanlah senda gurau.", words: [] },
         { ayah: 15, text: "إِنَّهُمْ يَكِيدُونَ كَيْدًا", translation: "Sungguh, mereka (orang kafir) merencanakan tipu daya yang jahat,", words: [] },
-        { ayah: 16, text: "وَأَكِيدُ كَيْدًا", translation: "dan Aku pun membuat rencana (tipu daya) yang jitu.", words: [] },
-        { ayah: 17, text: "فَمَهِّلِ ٱlْكَٰفِرِينَ أَمْهِلْهُمْ رُوَيْدًۢا", translation: "Karena itu berilah penangguhan kepada orang-orang kafir itu. Berilah mereka itu kesempatan untuk sementara waktu.", words: [] }
+        { ayah: 16, text: "وَأَكِيدُ كَيْدًا", translation: "Dan Aku pun membuat rencana (tipu daya) yang jitu.", words: [] },
+        { ayah: 17, text: "فَمَهِّلِ ٱلْكَٰفِرِينَ أَمْهِلْهُمْ رُوَيْدًۢا", translation: "Karena itu berilah penangguhan kepada orang-orang kafir; berilah mereka itu kesempatan untuk sementara waktu.", words: [] }
     ]
   },
   87: { 
@@ -627,14 +627,14 @@ export const quranData: QuranData = {
     name: "البينة",
     latin: "Al-Bayyinah",
     ayahs: [
-       { ayah: 1, text: "لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ", translation: "Orang-orang yang kafir dari golongan Ahli Kitab dan orang-orang musyrik tidak akan meninggalkan (agama mereka) sampai datang kepada mereka bukti yang nyata,", words: [] },
-       { ayah: 2, text: "رَسُولٌ مِّنَ ٱللَّهِ يَتْلُوا۟ صُحُفًا مُّطَهَّرَةً", translation: "(yaitu) seorang Rasul dari Allah (Muhammad) yang membacakan lembaran-lembaran yang suci (Al-Qur'an),", words: [] },
-       { ayah: 3, text: "فِيهَا كُتُبٌ قَيِّمَةٌ", translation: "di dalamnya terdapat (isi) kitab-kitab yang lurus (benar).", words: [] },
-       { ayah: 4, text: "وَمَا تَفَرَّقَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَٰبَ إِلَّا مِنۢ بَعْدِ مَا جَآءَتْهُمُ ٱلْبَيِّنَةُ", translation: "Dan tidaklah terpecah-belah orang-orang Ahli Kitab melainkan setelah datang kepada mereka bukti yang nyata.", words: [] },
-       { ayah: 5, text: "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ", translation: "Padahal mereka hanya diperintah menyembah Allah dengan ikhlas menaati-Nya semata-mata karena (menjalankan) agama, dan juga agar melaksanakan salat dan menunaikan zakat; dan yang demikian itulah agama yang lurus (benar).", words: [] },
-       { ayah: 6, text: "إِنَّ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَنَّمَ خَٰلِدِينَ فِيهَا ۚ أُو۟لَٰٓئِكَ هُمْ شَرُّ ٱلْبَرِيَّةِ", translation: "Sungguh, orang-orang yang kafir dari golongan Ahli Kitab dan orang-orang musyrik (akan masuk) ke neraka Jahanam; mereka kekal di dalamnya. Mereka itulah seburuk-buruk makhluk.", words: [] },
-       { ayah: 7, text: "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ أُو۟لَٰٓئِكَ هُمْ خَيْرُ ٱلْبَرِيَّةِ", translation: "Sungguh, orang-orang yang beriman dan mengerjakan kebajikan, mereka itu adalah sebaik-baik makhluk.", words: [] },
-       { ayah: 8, text: "جَزَآؤُهُمْ عِندَ رَبِّهِمْ جَنَّٰتُ عَدْنٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ خَٰلِدِينَ فِيهَآ أَبَدًا ۖ رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِىَ رَبَّهُۥ", translation: "Balasan mereka di sisi Tuhan mereka ialah surga ’Adn yang mengalir di bawahnya sungai-sungai; mereka kekal di dalamnya selama-lamanya. Allah rida terhadap mereka dan mereka pun rida kepada-Nya. Yang demikian itu adalah (balasan) bagi orang yang takut kepada Tuhannya.", words: [] }
+        { ayah: 1, text: "لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ", translation: "Orang-orang yang kafir dari golongan Ahli Kitab dan orang-orang musyrik tidak akan meninggalkan (agama mereka) sampai datang kepada mereka bukti yang nyata,", words: [] },
+        { ayah: 2, text: "رَسُولٌ مِّنَ ٱللَّهِ يَتْلُوا۟ صُحُفًا مُّطَهَّرَةً", translation: "(yaitu) seorang Rasul dari Allah (Muhammad) yang membacakan lembaran-lembaran yang suci (Al-Qur'an),", words: [] },
+        { ayah: 3, text: "فِيهَا كُتُبٌ قَيِّمَةٌ", translation: "di dalamnya terdapat (isi) kitab-kitab yang lurus (benar).", words: [] },
+        { ayah: 4, text: "وَمَا تَفَرَّقَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَٰبَ إِلَّا مِنۢ بَعْدِ مَا جَآءَتْهُمُ ٱلْبَيِّنَةُ", translation: "Dan tidaklah terpecah-belah orang-orang Ahli Kitab melainkan setelah datang kepada mereka bukti yang nyata.", words: [] },
+        { ayah: 5, text: "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ", translation: "Padahal mereka hanya diperintah menyembah Allah dengan ikhlas menaati-Nya semata-mata karena (menjalankan) agama, dan juga agar melaksanakan salat dan menunaikan zakat; dan yang demikian itulah agama yang lurus (benar).", words: [] },
+        { ayah: 6, text: "إِنَّ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَنَّمَ خَٰلِدِينَ فِيهَا ۚ أُو۟لَٰٓئِكَ هُمْ شَرُّ ٱلْبَرِيَّةِ", translation: "Sungguh, orang-orang yang kafir dari golongan Ahli Kitab dan orang-orang musyrik (akan masuk) ke neraka Jahanam; mereka kekal di dalamnya. Mereka itulah seburuk-buruk makhluk.", words: [] },
+        { ayah: 7, text: "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ أُو۟لَٰٓئِكَ هُمْ خَيْرُ ٱلْبَرِيَّةِ", translation: "Sungguh, orang-orang yang beriman dan mengerjakan kebajikan, mereka itu adalah sebaik-baik makhluk.", words: [] },
+        { ayah: 8, text: "جَزَآؤُهُمْ عِندَ رَبِّهِمْ جَنَّٰتُ عَدْنٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ خَٰلِدِينَ فِيهَآ أَبَدًا ۖ رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِىَ رَبَّهُۥ", translation: "Balasan mereka di sisi Tuhan mereka ialah surga ’Adn yang mengalir di bawahnya sungai-sungai; mereka kekal di dalamnya selama-lamanya. Allah rida terhadap mereka dan mereka pun rida kepada-Nya. Yang demikian itu adalah (balasan) bagi orang yang takut kepada Tuhannya.", words: [] }
     ]
   },
   99: {
@@ -642,14 +642,14 @@ export const quranData: QuranData = {
     name: "الزلزلة",
     latin: "Az-Zalzalah",
     ayahs: [
-      { ayah: 1, text: "إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا", translation: "Apabila bumi diguncangkan dengan guncangan yang dahsyat,", words: [] },
-      { ayah: 2, text: "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا", translation: "dan bumi telah mengeluarkan beban-beban berat (yang dikandung)nya,", words: [] },
-      { ayah: 3, text: "وَقَالَ ٱلْإِنسَٰنُ مَا لَهَا", translation: "Dan manusia bertanya, “Apa yang terjadi pada bumi ini?”", words: [] },
-      { ayah: 4, text: "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا", translation: "Pada hari itu bumi menyampaikan beritanya,", words: [] },
-      { ayah: 5, text: "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا", translation: "karena sesungguhnya Tuhanmu telah memerintahkan (yang sedemikian itu) padanya.", words: [] },
-      { ayah: 6, text: "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَٰلَهُمْ", translation: "Pada hari itu manusia keluar dari kuburnya dalam keadaan berkelompok-kelompok, untuk diperlihatkan kepada mereka (balasan) semua perbuatannya.", words: [] },
-      { ayah: 7, text: "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ", translation: "Maka barangsiapa mengerjakan kebaikan seberat zarrah, niscaya dia akan melihat (balasan)nya.", words: [] },
-      { ayah: 8, text: "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ", translation: "Dan barangsiapa mengerjakan kejahatan seberat zarrah, niscaya dia akan melihat (balasan)nya.", words: [] }
+        { ayah: 1, text: "إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا", translation: "Apabila bumi diguncangkan dengan guncangan yang dahsyat,", words: [] },
+        { ayah: 2, text: "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا", translation: "dan bumi telah mengeluarkan beban-beban berat (yang dikandung)nya,", words: [] },
+        { ayah: 3, text: "وَقَالَ ٱلْإِنسَٰنُ مَا لَهَا", translation: "Dan manusia bertanya, “Apa yang terjadi pada bumi ini?”", words: [] },
+        { ayah: 4, text: "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا", translation: "Pada hari itu bumi menyampaikan beritanya,", words: [] },
+        { ayah: 5, text: "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا", translation: "karena sesungguhnya Tuhanmu telah memerintahkan (yang sedemikian itu) padanya.", words: [] },
+        { ayah: 6, text: "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَٰلَهُمْ", translation: "Pada hari itu manusia keluar dari kuburnya dalam keadaan berkelompok-kelompok, untuk diperlihatkan kepada mereka (balasan) semua perbuatannya.", words: [] },
+        { ayah: 7, text: "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ", translation: "Maka barangsiapa mengerjakan kebaikan seberat zarrah, niscaya dia akan melihat (balasan)nya.", words: [] },
+        { ayah: 8, text: "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ", translation: "Dan barangsiapa mengerjakan kejahatan seberat zarrah, niscaya dia akan melihat (balasan)nya.", words: [] }
     ]
   },
   100: {
@@ -657,17 +657,17 @@ export const quranData: QuranData = {
     name: "العاديات",
     latin: "Al-'Adiyat",
     ayahs: [
-      { ayah: 1, text: "وَٱلْعَٰدِيَٰتِ ضَبْحًا", translation: "Demi kuda perang yang berlari kencang terengah-engah,", words: [] },
-      { ayah: 2, text: "فَٱلْمُورِيَٰتِ قَدْحًا", translation: "dan kuda yang memercikkan bunga api (dengan pukulan kuku kakinya),", words: [] },
-      { ayah: 3, text: "فَٱلْمُغِيرَٰتِ صُبْحًا", translation: "dan kuda yang menyerang (dengan tiba-tiba) pada waktu pagi,", words: [] },
-      { ayah: 4, text: "فَأَثَرْنَ بِهِۦ نَقْعًا", translation: "sehingga menerbangkan debu,", words: [] },
-      { ayah: 5, text: "فَوَسَطْنَ بِهِۦ جَمْعًا", translation: "lalu menyerbu ke tengah-tengah kumpulan musuh,", words: [] },
-      { ayah: 6, text: "إِنَّ ٱلْإِنسَٰنَ لِرَبِّهِۦ لَكَنُودٌ", translation: "sungguh, manusia itu sangat ingkar, (tidak bersyukur) kepada Tuhannya,", words: [] },
-      { ayah: 7, text: "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ", translation: "dan sesungguhnya dia (manusia) menyaksikan (mengakui) keingkarannya.", words: [] },
-      { ayah: 8, text: "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ", translation: "dan sesungguhnya cintanya kepada harta benar-benar berlebihan.", words: [] },
-      { ayah: 9, text: "أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ", translation: "Maka tidakkah dia mengetahui apabila apa yang di dalam kubur dikeluarkan,", words: [] },
-      { ayah: 10, text: "وَحُصِّلَ مَا فِى ٱلصُّدُورِ", translation: "dan apa yang tersimpan di dalam dada dilahirkan?", words: [] },
-      { ayah: 11, text: "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَخَبِيرٌۢ", translation: "sungguh, Tuhan mereka pada hari itu Mahateliti terhadap keadaan mereka.", words: [] }
+        { ayah: 1, text: "وَٱلْعَٰدِيَٰتِ ضَبْحًا", translation: "Demi kuda perang yang berlari kencang terengah-engah,", words: [] },
+        { ayah: 2, text: "فَٱلْمُورِيَٰتِ قَدْحًا", translation: "dan kuda yang memercikkan bunga api (dengan pukulan kuku kakinya),", words: [] },
+        { ayah: 3, text: "فَٱلْمُغِيرَٰتِ صُبْحًا", translation: "dan kuda yang menyerang (dengan tiba-tiba) pada waktu pagi,", words: [] },
+        { ayah: 4, text: "فَأَثَرْنَ بِهِۦ نَقْعًا", translation: "sehingga menerbangkan debu,", words: [] },
+        { ayah: 5, text: "فَوَسَطْنَ بِهِۦ جَمْعًا", translation: "lalu menyerbu ke tengah-tengah kumpulan musuh,", words: [] },
+        { ayah: 6, text: "إِنَّ ٱلْإِنسَٰنَ لِرَبِّهِۦ لَكَنُودٌ", translation: "sungguh, manusia itu sangat ingkar, (tidak bersyukur) kepada Tuhannya,", words: [] },
+        { ayah: 7, text: "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ", translation: "dan sesungguhnya dia (manusia) menyaksikan (mengakui) keingkarannya.", words: [] },
+        { ayah: 8, text: "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ", translation: "dan sesungguhnya cintanya kepada harta benar-benar berlebihan.", words: [] },
+        { ayah: 9, text: "أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ", translation: "Maka tidakkah dia mengetahui apabila apa yang di dalam kubur dikeluarkan,", words: [] },
+        { ayah: 10, text: "وَحُصِّلَ مَا فِى ٱلصُّدُورِ", translation: "dan apa yang tersimpan di dalam dada dilahirkan?", words: [] },
+        { ayah: 11, text: "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَخَبِيرٌۢ", translation: "sungguh, Tuhan mereka pada hari itu Mahateliti terhadap keadaan mereka.", words: [] }
     ]
   },
   101: {
@@ -675,17 +675,17 @@ export const quranData: QuranData = {
     name: "القارعة",
     latin: "Al-Qari'ah",
     ayahs: [
-      { ayah: 1, text: "ٱلْقَارِعَةُ", translation: "Hari Kiamat,", words: [] },
-      { ayah: 2, text: "مَا ٱلْقَارِعَةُ", translation: "Apakah hari Kiamat itu?", words: [] },
-      { ayah: 3, text: "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ", translation: "Dan tahukah kamu apakah hari Kiamat itu?", words: [] },
-      { ayah: 4, text: "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ", translation: "Pada hari itu manusia seperti laron yang beterbangan,", words: [] },
-      { ayah: 5, text: "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ", translation: "dan gunung-gunung seperti bulu yang dihambur-hamburkan.", words: [] },
-      { ayah: 6, text: "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ", translation: "Maka adapun orang yang berat timbangan (kebaikan)nya,", words: [] },
-      { ayah: 7, text: "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ", translation: "maka dia berada dalam kehidupan yang memuaskan (senang).", words: [] },
-      { ayah: 8, text: "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ", translation: "Dan adapun orang yang ringan timbangan (kebaikan)nya,", words: [] },
-      { ayah: 9, text: "فَأُمُّهُۥ هَاوِيَةٌ", translation: "maka tempat kembalinya adalah neraka Hawiyah.", words: [] },
-      { ayah: 10, text: "وَمَآ أَدْرَىٰكَ مَا هِيَهْ", translation: "Dan tahukah kamu apakah neraka Hawiyah itu?", words: [] },
-      { ayah: 11, text: "نَارٌ حَامِيَةٌۢ", translation: "(Yaitu) api yang sangat panas.", words: [] }
+        { ayah: 1, text: "ٱلْقَارِعَةُ", translation: "Hari Kiamat,", words: [] },
+        { ayah: 2, text: "مَا ٱلْقَارِعَةُ", translation: "Apakah hari Kiamat itu?", words: [] },
+        { ayah: 3, text: "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ", translation: "Dan tahukah kamu apakah hari Kiamat itu?", words: [] },
+        { ayah: 4, text: "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ", translation: "Pada hari itu manusia seperti laron yang beterbangan,", words: [] },
+        { ayah: 5, text: "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ", translation: "dan gunung-gunung seperti bulu yang dihambur-hamburkan.", words: [] },
+        { ayah: 6, text: "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ", translation: "Maka adapun orang yang berat timbangan (kebaikan)nya,", words: [] },
+        { ayah: 7, text: "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ", translation: "maka dia berada dalam kehidupan yang memuaskan (senang).", words: [] },
+        { ayah: 8, text: "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ", translation: "Dan adapun orang yang ringan timbangan (kebaikan)nya,", words: [] },
+        { ayah: 9, text: "فَأُمُّهُۥ هَاوِيَةٌ", translation: "maka tempat kembalinya adalah neraka Hawiyah.", words: [] },
+        { ayah: 10, text: "وَمَآ أَدْرَىٰكَ مَا هِيَهْ", translation: "Dan tahukah kamu apakah neraka Hawiyah itu?", words: [] },
+        { ayah: 11, text: "نَارٌ حَامِيَةٌۢ", translation: "(Yaitu) api yang sangat panas.", words: [] }
     ]
   },
   102: {
@@ -693,14 +693,14 @@ export const quranData: QuranData = {
     name: "التكاثر",
     latin: "At-Takasur",
     ayahs: [
-       { ayah: 1, text: "أَلْهَىٰكُمُ ٱلتَّكَاثُرُ", translation: "Bermegah-megahan telah melalaikan kamu,", words: [] },
-       { ayah: 2, text: "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ", translation: "sampai kamu masuk ke dalam kubur.", words: [] },
-       { ayah: 3, text: "كَلَّا سَوْفَ تَعْلَمُونَ", translation: "Sekali-kali tidak! Kelak kamu akan mengetahui (akibat perbuatanmu itu),", words: [] },
-       { ayah: 4, text: "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ", translation: "kemudian sekali-kali tidak! Kelak kamu akan mengetahui.", words: [] },
-       { ayah: 5, text: "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ", translation: "Sekali-kali tidak! Sekiranya kamu mengetahui dengan pasti,", words: [] },
-       { ayah: 6, text: "لَتَرَوُنَّ ٱلْجَحِيمَ", translation: "niscaya kamu benar-benar akan melihat neraka Jahim,", words: [] },
-       { ayah: 7, text: "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ", translation: "kemudian kamu benar-benar akan melihatnya dengan mata kepala sendiri,", words: [] },
-       { ayah: 8, text: "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ", translation: "kemudian kamu benar-benar akan ditanya pada hari itu tentang kenikmatan (yang megah di dunia itu).", words: [] }
+        { ayah: 1, text: "أَلْهَىٰكُمُ ٱلتَّكَاثُرُ", translation: "Bermegah-megahan telah melalaikan kamu,", words: [] },
+        { ayah: 2, text: "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ", translation: "sampai kamu masuk ke dalam kubur.", words: [] },
+        { ayah: 3, text: "كَلَّا سَوْفَ تَعْلَمُونَ", translation: "Sekali-kali tidak! Kelak kamu akan mengetahui (akibat perbuatanmu itu),", words: [] },
+        { ayah: 4, text: "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ", translation: "kemudian sekali-kali tidak! Kelak kamu akan mengetahui.", words: [] },
+        { ayah: 5, text: "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ", translation: "Sekali-kali tidak! Sekiranya kamu mengetahui dengan pasti,", words: [] },
+        { ayah: 6, text: "لَتَرَوُنَّ ٱلْجَحِيمَ", translation: "niscaya kamu benar-benar akan melihat neraka Jahim,", words: [] },
+        { ayah: 7, text: "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ", translation: "kemudian kamu benar-benar akan melihatnya dengan mata kepala sendiri,", words: [] },
+        { ayah: 8, text: "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ", translation: "kemudian kamu benar-benar akan ditanya pada hari itu tentang kenikmatan (yang megah di dunia itu).", words: [] }
     ]
   },
   103: {
@@ -708,9 +708,9 @@ export const quranData: QuranData = {
     name: "العصر",
     latin: "Al-'Asr",
     ayahs: [
-       { ayah: 1, text: "وَٱلْعَصْرِ", translation: "Demi masa,", words: [] },
-       { ayah: 2, text: "إِنَّ ٱلْإِنسَٰنَ لَفِى خُسْرٍ", translation: "sungguh, manusia berada dalam kerugian,", words: [] },
-       { ayah: 3, text: "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ", translation: "kecuali orang-orang yang beriman dan mengerjakan kebajikan serta saling menasihati untuk kebenaran dan saling menasihati untuk kesabaran.", words: [] }
+        { ayah: 1, text: "وَٱلْعَصْرِ", translation: "Demi masa,", words: [] },
+        { ayah: 2, text: "إِنَّ ٱلْإِنسَٰنَ لَفِى خُسْرٍ", translation: "sungguh, manusia berada dalam kerugian,", words: [] },
+        { ayah: 3, text: "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ", translation: "kecuali orang-orang yang beriman dan mengerjakan kebajikan serta saling menasihati untuk kebenaran dan saling menasihati untuk kesabaran.", words: [] }
     ]
   },
   104: {
@@ -718,15 +718,15 @@ export const quranData: QuranData = {
     name: "الهمزة",
     latin: "Al-Humazah",
     ayahs: [
-      { ayah: 1, text: "وَيْلٌ لِكُلِّ هُمَزَةٍ لُمَزَةٍ", translation: "Celakalah bagi setiap pengumpat dan pencela,", words: [] },
-      { ayah: 2, text: "ٱلَّذِى جَمَعَ مَالًا وَعَدَّدَهُۥ", translation: "yang mengumpulkan harta dan menghitung-hitungnya,", words: [] },
-      { ayah: 3, text: "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ", translation: "Dia (manusia) mengira bahwa hartanya itu dapat mengekalkannya.", words: [] },
-      { ayah: 4, text: "كَلَّا لَيُنبَذَنَّ فِى ٱلْحُطَمَةِ", translation: "Sekali-kali tidak! Pasti dia akan dilemparkan ke dalam (neraka) Hutamah.", words: [] },
-      { ayah: 5, text: "وَمَآ أَدْرَىٰكَ مَا ٱلْحُطَمَةُ", translation: "Dan tahukah kamu apakah (neraka) Hutamah itu?", words: [] },
-      { ayah: 6, text: "نَارُ ٱللَّهِ ٱلْمُوقَدَةُ", translation: "(Yaitu) api (azab) Allah yang dinyalakan,", words: [] },
-      { ayah: 7, text: "ٱلَّتِى تَطَّلِعُ عَلَى ٱلْأَفْـِٔدَةِ", translation: "yang (membakar) sampai ke hati.", words: [] },
-      { ayah: 8, text: "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ", translation: "Sungguh, api itu ditutup rapat atas (diri) mereka,", words: [] },
-      { ayah: 9, text: "فِى عَمَدٍ مُّمَدَّدَةٍۭ", translation: "(sedang mereka itu) diikat pada tiang-tiang yang panjang.", words: [] }
+        { ayah: 1, text: "وَيْلٌ لِكُلِّ هُمَزَةٍ لُمَزَةٍ", translation: "Celakalah bagi setiap pengumpat dan pencela,", words: [] },
+        { ayah: 2, text: "ٱلَّذِى جَمَعَ مَالًا وَعَدَّدَهُۥ", translation: "yang mengumpulkan harta dan menghitung-hitungnya,", words: [] },
+        { ayah: 3, text: "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ", translation: "Dia (manusia) mengira bahwa hartanya itu dapat mengekalkannya.", words: [] },
+        { ayah: 4, text: "كَلَّا لَيُنبَذَنَّ فِى ٱلْحُطَمَةِ", translation: "Sekali-kali tidak! Pasti dia akan dilemparkan ke dalam (neraka) Hutamah.", words: [] },
+        { ayah: 5, text: "وَمَآ أَدْرَىٰكَ مَا ٱلْحُطَمَةُ", translation: "Dan tahukah kamu apakah (neraka) Hutamah itu?", words: [] },
+        { ayah: 6, text: "نَارُ ٱللَّهِ ٱلْمُوقَدَةُ", translation: "(Yaitu) api (azab) Allah yang dinyalakan,", words: [] },
+        { ayah: 7, text: "ٱلَّتِى تَطَّلِعُ عَلَى ٱلْأَفْـِٔدَةِ", translation: "yang (membakar) sampai ke hati.", words: [] },
+        { ayah: 8, text: "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ", translation: "Sungguh, api itu ditutup rapat atas (diri) mereka,", words: [] },
+        { ayah: 9, text: "فِى عَمَدٍ مُّمَدَّدَةٍۭ", translation: "(sedang mereka itu) diikat pada tiang-tiang yang panjang.", words: [] }
     ]
   },
   105: {
@@ -734,11 +734,11 @@ export const quranData: QuranData = {
     name: "الفيل",
     latin: "Al-Fil",
     ayahs: [
-      { ayah: 1, text: "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَٰبِ ٱلْفِيلِ", translation: "Tidakkah engkau (Muhammad) perhatikan bagaimana Tuhanmu telah bertindak terhadap pasukan bergajah?", words: [] },
-      { ayah: 2, text: "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ", translation: "Bukankah Dia telah menjadikan tipu daya mereka itu sia-sia?", words: [] },
-      { ayah: 3, text: "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ", translation: "dan Dia mengirimkan kepada mereka burung yang berbondong-bondong,", words: [] },
-      { ayah: 4, text: "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ", translation: "yang melempari mereka dengan batu dari tanah liat yang dibakar,", words: [] },
-      { ayah: 5, text: "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ", translation: "sehingga mereka dijadikan-Nya seperti daun-daun yang dimakan (ulat).", words: [] }
+        { ayah: 1, text: "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَٰبِ ٱلْفِيلِ", translation: "Tidakkah engkau (Muhammad) perhatikan bagaimana Tuhanmu telah bertindak terhadap pasukan bergajah?", words: [] },
+        { ayah: 2, text: "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ", translation: "Bukankah Dia telah menjadikan tipu daya mereka itu sia-sia?", words: [] },
+        { ayah: 3, text: "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ", translation: "dan Dia mengirimkan kepada mereka burung yang berbondong-bondong,", words: [] },
+        { ayah: 4, text: "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ", translation: "yang melempari mereka dengan batu dari tanah liat yang dibakar,", words: [] },
+        { ayah: 5, text: "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ", translation: "sehingga mereka dijadikan-Nya seperti daun-daun yang dimakan (ulat).", words: [] }
     ]
   },
   106: {
@@ -746,10 +746,10 @@ export const quranData: QuranData = {
     name: "قريش",
     latin: "Quraisy",
     ayahs: [
-      { ayah: 1, text: "لِإِيلَٰفِ قُرَيْشٍ", translation: "Karena kebiasaan orang-orang Quraisy,", words: [] },
-      { ayah: 2, text: "إِۦلَٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ", translation: "(yaitu) kebiasaan mereka bepergian pada musim dingin dan musim panas.", words: [] },
-      { ayah: 3, text: "فَلْيَعْبُدُوا۟ رَبَّ هَٰذَا ٱلْبَيْتِ", translation: "Maka hendaklah mereka menyembah Tuhan (pemilik) rumah ini (Kaʻbah),", words: [] },
-      { ayah: 4, text: "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ", translation: "yang telah memberi makanan kepada mereka untuk menghilangkan lapar dan mengamankan mereka dari rasa ketakutan.", words: [] }
+        { ayah: 1, text: "لِإِيلَٰفِ قُرَيْشٍ", translation: "Karena kebiasaan orang-orang Quraisy,", words: [] },
+        { ayah: 2, text: "إِۦلَٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ", translation: "(yaitu) kebiasaan mereka bepergian pada musim dingin dan musim panas.", words: [] },
+        { ayah: 3, text: "فَلْيَعْبُدُوا۟ رَبَّ هَٰذَا ٱلْبَيْتِ", translation: "Maka hendaklah mereka menyembah Tuhan (pemilik) rumah ini (Kaʻbah),", words: [] },
+        { ayah: 4, text: "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ", translation: "yang telah memberi makanan kepada mereka untuk menghilangkan lapar dan mengamankan mereka dari rasa ketakutan.", words: [] }
     ]
   },
   107: {
@@ -757,13 +757,13 @@ export const quranData: QuranData = {
     name: "الماعون",
     latin: "Al-Ma'un",
     ayahs: [
-      { ayah: 1, text: "أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ", translation: "Tahukah kamu (orang) yang mendustakan agama?", words: [] },
-      { ayah: 2, text: "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ", translation: "Maka itulah orang yang menghardik anak yatim,", words: [] },
-      { ayah: 3, text: "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ", translation: "dan tidak mendorong memberi makan orang miskin.", words: [] },
-      { ayah: 4, text: "فَوَيْلٌ لِّلْمُصَلِّينَ", translation: "Maka celakalah orang yang salat,", words: [] },
-      { ayah: 5, text: "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ", translation: "(yaitu) orang-orang yang lalai terhadap salatnya,", words: [] },
-      { ayah: 6, text: "ٱلَّذِينَ هُمْ يُرَآءُونَ", translation: "yang berbuat ria,", words: [] },
-      { ayah: 7, text: "وَيَمْنَعُونَ ٱلْمَاعُونَ", translation: "dan enggan (memberikan) bantuan.", words: [] }
+        { ayah: 1, text: "أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ", translation: "Tahukah kamu (orang) yang mendustakan agama?", words: [] },
+        { ayah: 2, text: "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ", translation: "Maka itulah orang yang menghardik anak yatim,", words: [] },
+        { ayah: 3, text: "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ", translation: "dan tidak mendorong memberi makan orang miskin.", words: [] },
+        { ayah: 4, text: "فَوَيْلٌ لِّلْمُصَلِّينَ", translation: "Maka celakalah orang yang salat,", words: [] },
+        { ayah: 5, text: "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ", translation: "(yaitu) orang-orang yang lalai terhadap salatnya,", words: [] },
+        { ayah: 6, text: "ٱلَّذِينَ هُمْ يُرَآءُونَ", translation: "yang berbuat ria,", words: [] },
+        { ayah: 7, text: "وَيَمْنَعُونَ ٱلْمَاعُونَ", translation: "dan enggan (memberikan) bantuan.", words: [] }
     ]
   },
   108: {
@@ -771,9 +771,9 @@ export const quranData: QuranData = {
     name: "الكوثر",
     latin: "Al-Kausar",
     ayahs: [
-      { ayah: 1, text: "إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ", translation: "Sungguh, Kami telah memberimu (Muhammad) nikmat yang banyak.", words: [] },
-      { ayah: 2, text: "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ", translation: "Maka laksanakanlah salat karena Tuhanmu, dan berkurbanlah (sebagai ibadah dan mendekatkan diri kepada Allah).", words: [] },
-      { ayah: 3, text: "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ", translation: "Sungguh, orang-orang yang membencimu, dialah yang terputus (dari rahmat Allah).", words: [] }
+        { ayah: 1, text: "إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ", translation: "Sungguh, Kami telah memberimu (Muhammad) nikmat yang banyak.", words: [] },
+        { ayah: 2, text: "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ", translation: "Maka laksanakanlah salat karena Tuhanmu, dan berkurbanlah (sebagai ibadah dan mendekatkan diri kepada Allah).", words: [] },
+        { ayah: 3, text: "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ", translation: "Sungguh, orang-orang yang membencimu, dialah yang terputus (dari rahmat Allah).", words: [] }
     ]
   },
   109: {
@@ -781,12 +781,12 @@ export const quranData: QuranData = {
     name: "الكافرون",
     latin: "Al-Kafirun",
     ayahs: [
-      { ayah: 1, text: "قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ", translation: "Katakanlah (Muhammad), 'Wahai orang-orang kafir!'", words: [] },
-      { ayah: 2, text: "لَآ أَعْبُدُ مَا تَعْبُدُونَ", translation: "Aku tidak akan menyembah apa yang kamu sembah,", words: [] },
-      { ayah: 3, text: "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ", translation: "dan kamu bukan penyembah apa yang aku sembah,", words: [] },
-      { ayah: 4, text: "وَلَآ أَنَا۠ عَابِدٌ مَّا عَبَدتُّمْ", translation: "dan aku tidak pernah menjadi penyembah apa yang kamu sembah,", words: [] },
-      { ayah: 5, text: "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ", translation: "dan kamu tidak pernah (pula) menjadi penyembah apa yang aku sembah.", words: [] },
-      { ayah: 6, text: "لَكُمْ دِينُكُمْ وَلِىَ دِينِ", translation: "Untukmu agamamu, dan untukku agamaku.”", words: [] }
+        { ayah: 1, text: "قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ", translation: "Katakanlah (Muhammad), 'Wahai orang-orang kafir!'", words: [] },
+        { ayah: 2, text: "لَآ أَعْبُدُ مَا تَعْبُدُونَ", translation: "Aku tidak akan menyembah apa yang kamu sembah,", words: [] },
+        { ayah: 3, text: "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ", translation: "dan kamu bukan penyembah apa yang aku sembah,", words: [] },
+        { ayah: 4, text: "وَلَآ أَنَا۠ عَابِدٌ مَّا عَبَدتُّمْ", translation: "dan aku tidak pernah menjadi penyembah apa yang kamu sembah,", words: [] },
+        { ayah: 5, text: "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ", translation: "dan kamu tidak pernah (pula) menjadi penyembah apa yang aku sembah.", words: [] },
+        { ayah: 6, text: "لَكُمْ دِينُكُمْ وَلِىَ دِينِ", translation: "Untukmu agamamu, dan untukku agamaku.”", words: [] }
     ]
   },
   110: {
@@ -794,9 +794,9 @@ export const quranData: QuranData = {
     name: "النصر",
     latin: "An-Nasr",
     ayahs: [
-      { ayah: 1, text: "إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ", translation: "Apabila telah datang pertolongan Allah dan kemenangan,", words: [] },
-      { ayah: 2, text: "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا", translation: "dan engkau melihat manusia berbondong-bondong masuk agama Allah,", words: [] },
-      { ayah: 3, text: "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا", translation: "maka bertasbihlah dengan memuji Tuhanmu dan mohonlah ampunan kepada-Nya. Sungguh, Dia Maha Penerima tobat.", words: [] }
+        { ayah: 1, text: "إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ", translation: "Apabila telah datang pertolongan Allah dan kemenangan,", words: [] },
+        { ayah: 2, text: "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا", translation: "dan engkau melihat manusia berbondong-bondong masuk agama Allah,", words: [] },
+        { ayah: 3, text: "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا", translation: "maka bertasbihlah dengan memuji Tuhanmu dan mohonlah ampunan kepada-Nya. Sungguh, Dia Maha Penerima tobat.", words: [] }
     ]
   },
   111: {
@@ -804,11 +804,11 @@ export const quranData: QuranData = {
     name: "اللهب",
     latin: "Al-Lahab",
     ayahs: [
-      { ayah: 1, text: "تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ", translation: "Binasalah kedua tangan Abu Lahab dan benar-benar binasa dia!", words: [] },
-      { ayah: 2, text: "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ", translation: "Tidaklah berguna baginya hartanya dan apa yang dia usahakan.", words: [] },
-      { ayah: 3, text: "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ", translation: "Kelak dia akan masuk ke dalam api yang bergejolak (neraka).", words: [] },
-      { ayah: 4, text: "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ", translation: "Dan (begitu pula) istrinya, pembawa kayu bakar (penyebar fitnah).", words: [] },
-      { ayah: 5, text: "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ", translation: "Di lehernya ada tali dari sabut yang dipintal.", words: [] }
+        { ayah: 1, text: "تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ", translation: "Binasalah kedua tangan Abu Lahab dan benar-benar binasa dia!", words: [] },
+        { ayah: 2, text: "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ", translation: "Tidaklah berguna baginya hartanya dan apa yang dia usahakan.", words: [] },
+        { ayah: 3, text: "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ", translation: "Kelak dia akan masuk ke dalam api yang bergejolak (neraka).", words: [] },
+        { ayah: 4, text: "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ", translation: "Dan (begitu pula) istrinya, pembawa kayu bakar (penyebar fitnah).", words: [] },
+        { ayah: 5, text: "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ", translation: "Di lehernya ada tali dari sabut yang dipintal.", words: [] }
     ]
   },
   112: {
@@ -816,10 +816,10 @@ export const quranData: QuranData = {
     name: "الإخلاص",
     latin: "Al-Ikhlas",
     ayahs: [
-      { ayah: 1, text: "قُلْ هُوَ ٱللَّهُ أَحَدٌ", translation: "Katakanlah (Muhammad), 'Dialah Allah, Yang Maha Esa.'", words: [] },
-      { ayah: 2, text: "ٱللَّهُ ٱلصَّمَدُ", translation: "Allah tempat meminta segala sesuatu.", words: [] },
-      { ayah: 3, text: "لَمْ يَلِدْ وَلَمْ يُولَدْ", translation: "(Allah) tidak beranak dan tidak pula diperanakkan.", words: [] },
-      { ayah: 4, text: "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ", translation: "Dan tidak ada sesuatu yang setara dengan Dia.", words: [] }
+        { ayah: 1, text: "قُلْ هُوَ ٱللَّهُ أَحَدٌ", translation: "Katakanlah (Muhammad), 'Dialah Allah, Yang Maha Esa.'", words: [] },
+        { ayah: 2, text: "ٱللَّهُ ٱلصَّمَدُ", translation: "Allah tempat meminta segala sesuatu.", words: [] },
+        { ayah: 3, text: "لَمْ يَلِدْ وَلَمْ يُولَدْ", translation: "(Allah) tidak beranak dan tidak pula diperanakkan.", words: [] },
+        { ayah: 4, text: "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ", translation: "Dan tidak ada sesuatu yang setara dengan Dia.", words: [] }
     ]
   },
   113: {
@@ -827,11 +827,11 @@ export const quranData: QuranData = {
     name: "الفلق",
     latin: "Al-Falaq",
     ayahs: [
-      { ayah: 1, text: "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ", translation: "Katakanlah, 'Aku berlindung kepada Tuhan yang menguasai subuh (fajar),'", words: [] },
-      { ayah: 2, text: "مِن شَرِّ مَا خَلَقَ", translation: "dari kejahatan (makhluk) yang Dia ciptakan,", words: [] },
-      { ayah: 3, text: "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ", translation: "dan dari kejahatan malam apabila telah gelap gulita,", words: [] },
-      { ayah: 4, text: "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ", translation: "dan dari kejahatan (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya),", words: [] },
-      { ayah: 5, text: "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ", translation: "dan dari kejahatan orang yang dengki apabila dia dengki.'", words: [] }
+        { ayah: 1, text: "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ", translation: "Katakanlah, 'Aku berlindung kepada Tuhan yang menguasai subuh (fajar),'", words: [] },
+        { ayah: 2, text: "مِن شَرِّ مَا خَلَقَ", translation: "dari kejahatan (makhluk) yang Dia ciptakan,", words: [] },
+        { ayah: 3, text: "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ", translation: "dan dari kejahatan malam apabila telah gelap gulita,", words: [] },
+        { ayah: 4, text: "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ", translation: "dan dari kejahatan (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya),", words: [] },
+        { ayah: 5, text: "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ", translation: "dan dari kejahatan orang yang dengki apabila dia dengki.'", words: [] }
     ]
   },
   114: {
@@ -839,12 +839,12 @@ export const quranData: QuranData = {
     name: "الناس",
     latin: "An-Nas",
     ayahs: [
-      { ayah: 1, text: "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ", translation: "Katakanlah, “Aku berlindung kepada Tuhannya manusia,", words: [{text: "قُلْ", translation: "Katakanlah"}, {text: "أَعُوذُ", translation: "aku berlindung"}, {text: "بِرَبِّ", translation: "kepada Tuhan"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
-      { ayah: 2, text: "مَلِكِ ٱلنَّاسِ", translation: "Raja manusia,", words: [{text: "مَلِكِ", translation: "Raja"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
-      { ayah: 3, text: "إِلَٰهِ ٱلنَّاسِ", translation: "sembahan manusia,", words: [{text: "إِلَٰهِ", translation: "Sembahan"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
-      { ayah: 4, text: "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ", translation: "dari kejahatan (bisikan) setan yang bersembunyi,", words: [{text: "مِن شَرِّ", translation: "dari kejahatan"}, {text: "ٱلْوَسْوَاسِ", translation: "bisikan"}, {text: "ٱلْخَنَّاسِ", translation: "yang biasa bersembunyi"}] },
-      { ayah: 5, text: "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ", translation: "yang membisikkan (kejahatan) ke dalam dada manusia,", words: [{text: "ٱلَّذِى", translation: "Yang"}, {text: "يُوَسْوِسُ", translation: "membisikkan"}, {text: "فِى صُدُورِ", translation: "ke dalam dada"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
-      { ayah: 6, text: "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ", translation: "dari (golongan) jin dan manusia.”", words: [{text: "مِنَ", translation: "dari"}, {text: "ٱلْجِنَّةِ", translation: "jin"}, {text: "وَٱلنَّاسِ", translation: "dan manusia"}] }
+        { ayah: 1, text: "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ", translation: "Katakanlah, “Aku berlindung kepada Tuhannya manusia,", words: [{text: "قُلْ", translation: "Katakanlah"}, {text: "أَعُوذُ", translation: "aku berlindung"}, {text: "بِرَبِّ", translation: "kepada Tuhan"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
+        { ayah: 2, text: "مَلِكِ ٱلنَّاسِ", translation: "Raja manusia,", words: [{text: "مَلِكِ", translation: "Raja"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
+        { ayah: 3, text: "إِلَٰهِ ٱلنَّاسِ", translation: "sembahan manusia,", words: [{text: "إِلَٰهِ", translation: "Sembahan"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
+        { ayah: 4, text: "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ", translation: "dari kejahatan (bisikan) setan yang bersembunyi,", words: [{text: "مِن شَرِّ", translation: "dari kejahatan"}, {text: "ٱلْوَسْوَاسِ", translation: "bisikan"}, {text: "ٱلْخَنَّاسِ", translation: "yang biasa bersembunyi"}] },
+        { ayah: 5, text: "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ", translation: "yang membisikkan (kejahatan) ke dalam dada manusia,", words: [{text: "ٱلَّذِى", translation: "Yang"}, {text: "يُوَسْوِسُ", translation: "membisikkan"}, {text: "فِى صُدُورِ", translation: "ke dalam dada"}, {text: "ٱلنَّاسِ", translation: "manusia"}] },
+        { ayah: 6, text: "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ", translation: "dari (golongan) jin dan manusia.”", words: [{text: "مِنَ", translation: "dari"}, {text: "ٱلْجِنَّةِ", translation: "jin"}, {text: "وَٱلنَّاسِ", translation: "dan manusia"}] }
     ]
   }
 };
