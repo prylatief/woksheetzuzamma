@@ -112,7 +112,7 @@ export const quranData: QuranData = {
         { ayah: 43, text: "فِيمَ أَنتَ مِن ذِكْرَىٰهَآ", translation: "Untuk apa engkau perlu menyebutkannya (waktunya)?", words: [] },
         { ayah: 44, text: "إِلَىٰ رَبِّكَ مُنتَهَىٰهَآ", translation: "Kepada Tuhanmulah (dikembalikan) kesudahannya (ketentuan waktunya).", words: [] },
         { ayah: 45, text: "إِنَّمَآ أَنتَ مُنذِرُ مَن يَخْشَىٰهَا", translation: "Engkau (Muhammad) hanyalah pemberi peringatan bagi siapa yang takut kepadanya (hari Kiamat).", words: [] },
-        { ayah: 46, text: "كَأَنَّهُمْ يَوْمَ يَرَوْنَهَا لَمْ يَلْبَثُوٓا۟ إِلَّا عَشِيَّةً أَوْ ضُحَىٰهَا", translation: "Pada hari ketika mereka melihat hari Kiamat itu (karena suasananya yang dahsyat), mereka merasa seakan-akan hanya (sebentar) tinggal (di dunia) pada waktu sore atau pagi hari.", words: [] }
+        { ayah: 46, text: "كَأَنَّهُمْ يَوْمَ يَرَوْنَهَا لَمْ يَلْبَثُوٓا۟ إِلَّا عَشِيَّةً أَوْ ضُحَىٰهَا", translation: "Pada hari ketika mereka melihat hari Kiamat itu (karena suasananya yang dahsyat), mereka merasa seakan-akan hanya (sebentar) tinggal (di dunia) pada waktu sore atau pagi hari.", words: [] },
     ]
   },
   80: { 
