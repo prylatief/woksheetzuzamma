@@ -76,7 +76,7 @@ export const quranData: QuranData = {
         { ayah: 7, text: "تَتْبَعُهَا ٱلرَّادِفَةُ", translation: "tiupan pertama itu diiringi oleh tiupan kedua.", words: [] },
         { ayah: 8, text: "قُلُوبٌ يَوْمَئِذٍ وَاجِفَةٌ", translation: "Hati manusia pada waktu itu merasa sangat takut,", words: [] },
         { ayah: 9, text: "أَبْصَٰرُهَا خَٰشِعَةٌ", translation: "pandangannya tertunduk.", words: [] },
-        { ayah: 10, text: "يَقُولُونَ أَءِنَّا لَمَرْدُودُونَ فِى ٱلْحَافِرَةِ", translation: "(Orang-orang kafir) berkata, "Apakah kita benar-benar akan dikembalikan kepada kehidupan yang semula?", words: [] },
+        { ayah: 10, text: "يَقُولُونَ أَءِنَّا لَمَرْدُودُونَ فِى ٱلْحَافِرَةِ", translation: "(Orang-orang kafir) berkata, "Apakah kita benar-benar akan dikembalikan kepada kehidupan yang semula?"", words: [] },
         { ayah: 11, text: "أَءِذَا كُنَّا عِظَٰمًا نَّخِرَةً", translation: "Apakah (akan dibangkitkan juga) apabila kita telah menjadi tulang belulang yang hancur?"", words: [] },
         { ayah: 12, text: "قَالُوا۟ تِلْكَ إِذًا كَرَّةٌ خَاسِرَةٌ", translation: "Mereka berkata, "Kalau demikian, itu adalah suatu pengembalian yang merugikan."", words: [] },
         { ayah: 13, text: "فَإِنَّمَا هِىَ زَجْرَةٌ وَٰحِدَةٌ", translation: "Maka pengembalian itu hanyalah dengan sekali tiupan saja.", words: [] },
