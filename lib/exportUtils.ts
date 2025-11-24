@@ -12,23 +12,7 @@ const waitForFonts = async (): Promise<void> => {
 
   // Tunggu tambahan untuk memastikan font Arab dirender dengan benar
   return new Promise((resolve) => {
-    setTimeout(resolve, 500);
-  });
-};
-
-// Fungsi untuk memaksa re-render teks
-const forceTextRerender = (element: HTMLElement): void => {
-  // Force layout recalculation
-  element.offsetHeight;
-
-  // Trigger repaint for text elements
-  const textElements = element.querySelectorAll('.font-quran, [dir="rtl"]');
-  textElements.forEach((el) => {
-    const htmlEl = el as HTMLElement;
-    const originalDisplay = htmlEl.style.display;
-    htmlEl.style.display = 'none';
-    htmlEl.offsetHeight;
-    htmlEl.style.display = originalDisplay;
+    setTimeout(resolve, 800);
   });
 };
 
@@ -36,19 +20,40 @@ export const exportToPdf = async (onProgress: ProgressCallback) => {
   // Tunggu font dimuat sebelum memulai export
   await waitForFonts();
 
+  // Ambil container utama
+  const exportContainer = document.querySelector<HTMLElement>('.printable-export-container');
+  if (!exportContainer) {
+    throw new Error('Export container tidak ditemukan');
+  }
+
+  // Simpan style asli
+  const originalStyle = exportContainer.style.cssText;
+
+  // Buat container VISIBLE untuk capture yang benar
+  // Posisikan di luar viewport tapi masih rendered
+  exportContainer.style.cssText = `
+    position: fixed !important;
+    left: 0 !important;
+    top: 0 !important;
+    z-index: 99999 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: none !important;
+    background: white !important;
+  `;
+
+  // Tunggu browser render
+  await new Promise((resolve) => setTimeout(resolve, 500));
+
   // Menargetkan elemen yang disiapkan khusus untuk ekspor
   const pages = document.querySelectorAll<HTMLElement>('.page-container-for-export');
   const totalPages = pages.length;
 
   if (totalPages === 0) {
+    // Kembalikan style asli
+    exportContainer.style.cssText = originalStyle;
     throw new Error('Tidak ada halaman yang ditemukan untuk diekspor. Pastikan kontainer yang dapat dicetak dirender.');
   }
-
-  // Force re-render semua halaman untuk memastikan font dirender dengan benar
-  pages.forEach((page) => forceTextRerender(page));
-
-  // Tunggu sebentar setelah force re-render
-  await new Promise((resolve) => setTimeout(resolve, 300));
 
   // Inisialisasi progres
   onProgress({ current: 0, total: totalPages });
@@ -56,41 +61,46 @@ export const exportToPdf = async (onProgress: ProgressCallback) => {
   // Menggunakan unit 'in' dan format 'a4' standar untuk memastikan kompatibilitas cetak.
   const pdf = new jsPDF({
     orientation: 'portrait',
-    unit: 'in', // Gunakan inci agar sesuai dengan ukuran CSS di preview
-    format: 'a4', // Ukuran A4 standar yang dikenali oleh printer
+    unit: 'in',
+    format: 'a4',
     putOnlyUsedFonts: true,
     floatPrecision: 16,
   });
 
-  const pdfWidth = pdf.internal.pageSize.getWidth(); // Ini akan menjadi 8.27 inci
-  const pdfHeight = pdf.internal.pageSize.getHeight(); // Ini akan menjadi 11.69 inci
+  const pdfWidth = pdf.internal.pageSize.getWidth();
+  const pdfHeight = pdf.internal.pageSize.getHeight();
 
-  for (let i = 0; i < totalPages; i++) {
-    const page = pages[i];
+  try {
+    for (let i = 0; i < totalPages; i++) {
+      const page = pages[i];
 
-    // Memperbarui progres sebelum memproses setiap halaman
-    onProgress({ current: i + 1, total: totalPages });
+      // Memperbarui progres sebelum memproses setiap halaman
+      onProgress({ current: i + 1, total: totalPages });
 
-    // Meningkatkan skala untuk resolusi cetak yang lebih tinggi (~300 DPI).
-    // Browser menggunakan ~96 DPI, jadi skala 3 menghasilkan ~288 DPI.
-    const canvas = await html2canvas(page, {
-      scale: 3, // Menangkap dengan resolusi 3x untuk kualitas cetak yang tajam
-      useCORS: true, // Untuk gambar latar dari domain eksternal
-      logging: false, // Menyembunyikan log konsol dari html2canvas
-      backgroundColor: '#ffffff', // Gunakan latar putih eksplisit
-      allowTaint: false,
-      removeContainer: false, // Jangan hapus kontainer untuk menjaga styling
-    });
+      // Capture dengan html2canvas
+      const canvas = await html2canvas(page, {
+        scale: 3,
+        useCORS: true,
+        logging: false,
+        backgroundColor: '#ffffff',
+        allowTaint: false,
+        // Gunakan window dimensions untuk memastikan capture yang benar
+        windowWidth: page.scrollWidth,
+        windowHeight: page.scrollHeight,
+      });
 
-    const imgData = canvas.toDataURL('image/png', 1.0); // Menggunakan PNG kualitas tinggi
+      const imgData = canvas.toDataURL('image/png', 1.0);
 
-    if (i > 0) {
-      pdf.addPage();
+      if (i > 0) {
+        pdf.addPage();
+      }
+
+      pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight, undefined, 'FAST');
     }
 
-    // Menambahkan gambar ke PDF dengan kompresi cepat
-    pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight, undefined, 'FAST');
+    pdf.save('worksheet-latiefathfall.pdf');
+  } finally {
+    // SELALU kembalikan style asli, bahkan jika terjadi error
+    exportContainer.style.cssText = originalStyle;
   }
-
-  pdf.save('worksheet-latiefathfall.pdf');
 };

@@ -260,10 +260,12 @@ const App: React.FC = () => {
             -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
           }
+          /* Reset semua transform dan origin pada page-container untuk export */
           .page-container-for-export .page-container {
             box-shadow: none !important;
-            border-radius: 0 !important;
+            border-radius: 16px !important;
             transform: none !important;
+            transform-origin: center !important;
           }
           /* Pastikan font Arab dirender dengan benar saat export */
           .page-container-for-export .font-quran,
@@ -271,11 +273,30 @@ const App: React.FC = () => {
             font-family: 'Amiri Quran', serif !important;
             text-rendering: optimizeLegibility;
             -webkit-font-smoothing: antialiased;
+            letter-spacing: normal !important;
           }
           /* Pastikan alignment tetap konsisten */
           .page-container-for-export header,
-          .page-container-for-export footer {
+          .page-container-for-export footer,
+          .page-container-for-export main {
             transform: none !important;
+          }
+          /* Fix untuk flexbox items agar tidak berubah posisi */
+          .page-container-for-export .flex {
+            flex-shrink: 0;
+          }
+          /* Fix untuk text alignment */
+          .page-container-for-export .text-right {
+            text-align: right !important;
+          }
+          .page-container-for-export .text-center {
+            text-align: center !important;
+          }
+          .page-container-for-export .justify-center {
+            justify-content: center !important;
+          }
+          .page-container-for-export .items-center {
+            align-items: center !important;
           }
           .A4-preview-wrapper {
             transform: scale(0.85);
