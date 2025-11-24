@@ -272,7 +272,7 @@ const ReorderWords: React.FC<{ ayahs: Ayah[], isAnswerKey?: boolean }> = ({ ayah
                     <p className="text-sm mb-3 font-semibold">Susunlah kata-kata berikut menjadi urutan yang benar (Ayat {ayah.ayah}):</p>
                     <div className="flex flex-wrap items-center justify-end gap-3 p-3 bg-amber-50 rounded-lg" dir="rtl">
                         {shuffleWords(ayah.text).map((word, index) => (
-                            <div key={index} className="border border-amber-300 rounded-md px-3 py-1 bg-white font-quran text-2xl">{word}</div>
+                            <div key={index} className="border border-amber-300 rounded-md px-3 py-2 bg-white font-quran text-2xl flex items-center justify-center" style={{ lineHeight: '1.5' }}>{word}</div>
                         ))}
                     </div>
                     <div className="h-12 border-b-2 border-dotted border-gray-400 mt-4 text-right font-quran text-3xl flex items-center justify-end" dir="rtl">
