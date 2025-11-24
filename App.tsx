@@ -6,6 +6,8 @@ import { ActivityRenderer } from './components/ActivityRenderer';
 import { quranData } from './data/quranData';
 import { exportToPdf } from './lib/exportUtils';
 import { ExportOptionsModal } from './components/ExportOptionsModal';
+import { estimatePageHeight } from './lib/pageHeightEstimator';
+import { PageFullWarning } from './components/PageFullWarning';
 
 const ExportOverlay: React.FC<{ progress: number; total: number }> = ({ progress, total }) => (
   <div className="fixed inset-0 bg-gray-900 bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity duration-300">
@@ -72,7 +74,23 @@ const App: React.FC = () => {
 
 
   const selectedSurah = quranData[config.surahNumber];
-  
+
+  // Get current ayahs for estimation
+  const currentAyahs = useMemo(() => {
+    return quranData[config.surahNumber].ayahs.filter(
+      (ayah) => ayah.ayah >= config.ayahRange[0] && ayah.ayah <= config.ayahRange[1]
+    );
+  }, [config.surahNumber, config.ayahRange]);
+
+  // Calculate page estimation for compact mode
+  const pageEstimation = useMemo(() => {
+    if (config.output.paginationMode !== 'compact') return undefined;
+    return estimatePageHeight(config.activities, currentAyahs);
+  }, [config.activities, currentAyahs, config.output.paginationMode]);
+
+  const isCompactMode = config.output.paginationMode === 'compact';
+  const isPageFull = isCompactMode && pageEstimation?.isFull;
+
   const studentPagesContent = useMemo(() => {
     const currentSurah = quranData[config.surahNumber];
     const ayahsToRender = currentSurah.ayahs.filter(
@@ -238,7 +256,7 @@ const App: React.FC = () => {
            @media (max-width: 1024px) { .A4-preview-wrapper { transform: scale(0.5); } }
       `}</style>
 
-      <ControlPanel config={config} setConfig={setConfig} onExport={openExportModal} isExporting={isExporting} />
+      <ControlPanel config={config} setConfig={setConfig} onExport={openExportModal} isExporting={isExporting} pageEstimation={pageEstimation} />
       
       <main className="flex-1 overflow-y-auto p-4 lg:p-10 bg-gray-200">
         
@@ -266,15 +284,20 @@ const App: React.FC = () => {
 
         <div id="worksheet-preview" className="flex flex-col items-center">
             {currentPageContent ? (
-                <div key={`${config.surahNumber}-${config.ayahRange.join('-')}-${currentPageIndex}`} className="A4-preview-wrapper">
-                  <WorksheetPage 
-                    config={config} 
+                <div key={`${config.surahNumber}-${config.ayahRange.join('-')}-${currentPageIndex}`} className="A4-preview-wrapper relative">
+                  <WorksheetPage
+                    config={config}
                     surah={selectedSurah}
                     pageNumber={currentPageIndex + 1}
                     totalPages={studentPagesContent.length}
                   >
                       {currentPageContent}
                   </WorksheetPage>
+
+                  {/* Page Full Overlay Indicator */}
+                  {isCompactMode && pageEstimation && (pageEstimation.isFull || pageEstimation.isNearlyFull) && (
+                    <PageFullWarning estimation={pageEstimation} variant="overlay" />
+                  )}
                 </div>
             ) : (
               <div className="flex flex-col items-center justify-center h-full text-center text-gray-500 bg-white rounded-lg shadow-md p-10 mt-8">
