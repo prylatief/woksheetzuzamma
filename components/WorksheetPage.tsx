@@ -87,11 +87,11 @@ export const WorksheetPage: React.FC<WorksheetPageProps> = ({ config, surah, chi
               </div>
             </div>
             <div className="w-1/2 flex justify-end items-center gap-4">
-               <div className="text-right">
-                <h1 className="text-3xl font-bold font-quran" dir="rtl">{surah.name}</h1>
-                <p className="text-lg font-bold">{surah.latin}: {config.ayahRange[0]}-{config.ayahRange[1]}</p>
+               <div className="text-right" style={{ lineHeight: '1.4' }}>
+                <h1 className="text-3xl font-bold font-quran" dir="rtl" style={{ marginBottom: '4px' }}>{surah.name}</h1>
+                <p className="text-lg font-bold" style={{ marginTop: '0' }}>{surah.latin}: {config.ayahRange[0]}-{config.ayahRange[1]}</p>
               </div>
-              {header.logoUrl && <img src={header.logoUrl} alt="Logo Sekolah" className="h-20 w-20 object-contain" />}
+              {header.logoUrl && <img src={header.logoUrl} alt="Logo Sekolah" className="h-20 w-20 object-contain flex-shrink-0" />}
             </div>
           </div>
         </header>
