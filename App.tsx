@@ -26,7 +26,17 @@ const ExportOverlay: React.FC<{ progress: number; total: number }> = ({ progress
 );
 
 const PrintableWorksheet: React.FC<{ config: WorksheetConfig; surah: Surah; pagesContent: React.ReactNode[] }> = ({ config, surah, pagesContent }) => (
-    <div style={{ position: 'absolute', left: '-9999px', top: 0 }}>
+    <div
+      className="printable-export-container"
+      style={{
+        position: 'fixed',
+        left: 0,
+        top: 0,
+        zIndex: -9999,
+        opacity: 0,
+        pointerEvents: 'none',
+      }}
+    >
         {pagesContent.map((content, index) => (
             <div key={index} className="page-container-for-export">
                 <WorksheetPage
@@ -163,7 +173,7 @@ const App: React.FC = () => {
   useEffect(() => {
     if (isExporting && pagesToExport.length > 0) {
       setExportProgress({ current: 0, total: pagesToExport.length });
-      
+
       const timer = setTimeout(async () => {
         try {
           await exportToPdf((progress) => setExportProgress(progress));
@@ -174,7 +184,7 @@ const App: React.FC = () => {
           setIsExporting(false);
           setPagesToExport([]);
         }
-      }, 100); // Penundaan singkat untuk memungkinkan React merender konten yang akan diekspor
+      }, 800); // Penundaan lebih lama untuk memastikan font Arab dirender dengan benar
 
       return () => clearTimeout(timer);
     }
@@ -235,17 +245,37 @@ const App: React.FC = () => {
       />
       
       <style>{`
+          /* Container untuk export - menggunakan fixed positioning agar html2canvas bisa capture dengan benar */
+          .printable-export-container {
+            font-family: 'Poppins', sans-serif;
+          }
           .page-container-for-export {
             /* Menerapkan gaya langsung ke elemen wrapper untuk ekspor */
             width: 8.27in;
             height: 11.69in;
             overflow: hidden;
-            background-color: white; /* Pastikan ada latar belakang */
+            background-color: white !important;
+            /* Pastikan font rendering yang konsisten */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
           }
           .page-container-for-export .page-container {
-            box-shadow: none;
-            border-radius: 0;
-            transform: scale(1);
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            transform: none !important;
+          }
+          /* Pastikan font Arab dirender dengan benar saat export */
+          .page-container-for-export .font-quran,
+          .page-container-for-export [dir="rtl"] {
+            font-family: 'Amiri Quran', serif !important;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+          }
+          /* Pastikan alignment tetap konsisten */
+          .page-container-for-export header,
+          .page-container-for-export footer {
+            transform: none !important;
           }
           .A4-preview-wrapper {
             transform: scale(0.85);

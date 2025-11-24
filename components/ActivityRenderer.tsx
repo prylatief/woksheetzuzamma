@@ -10,8 +10,11 @@ interface ActivityWrapperProps {
 }
 
 const ActivityWrapper: React.FC<ActivityWrapperProps> = ({ title, children, isAnswerKey }) => (
-  <div className="mb-8 break-inside-avoid">
-    <h2 className={`text-xl font-bold ${isAnswerKey ? 'text-gray-700 bg-gray-200 border-gray-400' : 'text-teal-700 bg-teal-100 border-teal-500'} border-l-4 px-4 py-2 rounded-r-lg mb-4`}>
+  <div className="mb-8 break-inside-avoid" style={{ pageBreakInside: 'avoid' }}>
+    <h2
+      className={`text-xl font-bold ${isAnswerKey ? 'text-gray-700 bg-gray-200 border-gray-400' : 'text-teal-700 bg-teal-100 border-teal-500'} border-l-4 px-4 py-2 rounded-r-lg mb-4`}
+      style={{ lineHeight: '1.4', minHeight: '40px', display: 'flex', alignItems: 'center' }}
+    >
       {isAnswerKey ? 'Kunci Jawaban: ' : ''}{title}
     </h2>
     <div className="px-2">{children}</div>
@@ -62,12 +65,12 @@ const TajwidColor: React.FC<{ ayahs: Ayah[] }> = ({ ayahs }) => {
 
     return (
         <ActivityWrapper title={ACTIVITY_NAMES.tajwid_color}>
-            <div className="flex justify-center gap-4 mb-6 text-sm">
-                <span className="font-bold flex items-center"><span className="w-4 h-4 rounded-full bg-red-500 mr-2"></span>Mad</span>
-                <span className="font-bold flex items-center"><span className="w-4 h-4 rounded-full bg-blue-500 mr-2"></span>Qalqalah</span>
-                <span className="font-bold flex items-center"><span className="w-4 h-4 rounded-full bg-green-500 mr-2"></span>Idgham</span>
+            <div className="flex justify-center items-center gap-6 mb-6 text-sm" style={{ minHeight: '24px' }}>
+                <span className="font-bold flex items-center whitespace-nowrap"><span className="w-4 h-4 rounded-full bg-red-500 mr-2 flex-shrink-0"></span>Mad</span>
+                <span className="font-bold flex items-center whitespace-nowrap"><span className="w-4 h-4 rounded-full bg-blue-500 mr-2 flex-shrink-0"></span>Qalqalah</span>
+                <span className="font-bold flex items-center whitespace-nowrap"><span className="w-4 h-4 rounded-full bg-green-500 mr-2 flex-shrink-0"></span>Idgham</span>
             </div>
-            <div className="space-y-4 text-right font-quran text-3xl" dir="rtl">
+            <div className="space-y-4 text-right font-quran text-3xl" dir="rtl" style={{ lineHeight: '2' }}>
                 {ayahs.map(ayah => (
                     <p key={ayah.ayah} dangerouslySetInnerHTML={highlightText(ayah.text)} />
                 ))}
