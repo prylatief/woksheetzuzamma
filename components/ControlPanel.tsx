@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { WorksheetConfig, ActivityType, ACTIVITY_NAMES, SURAH_ORDER } from '../types';
 import { quranData } from '../data/quranData';
+import { estimatePageHeight, wouldActivityOverflow, PageEstimation } from '../lib/pageHeightEstimator';
+import { PageFullWarning, PageUsageMeter } from './PageFullWarning';
 
 interface ControlPanelProps {
   config: WorksheetConfig;
   setConfig: React.Dispatch<React.SetStateAction<WorksheetConfig>>;
   onExport: () => void;
   isExporting: boolean;
+  pageEstimation?: PageEstimation;
 }
 
 const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
@@ -90,13 +93,17 @@ const AyahPreview: React.FC<{
   );
 };
 
-export const ControlPanel: React.FC<ControlPanelProps> = ({ config, setConfig, onExport, isExporting }) => {
+export const ControlPanel: React.FC<ControlPanelProps> = ({ config, setConfig, onExport, isExporting, pageEstimation }) => {
   // Local state for inputs to avoid updating preview on every keystroke
   const [localSurahNumber, setLocalSurahNumber] = useState(config.surahNumber);
   const [dariAyahInput, setDariAyahInput] = useState(String(config.ayahRange[0]));
   const [sampaiAyahInput, setSampaiAyahInput] = useState(String(config.ayahRange[1]));
-  
+
   const maxAyah = quranData[localSurahNumber].ayahs.length;
+
+  // Check if page is full (only relevant in compact mode)
+  const isCompactMode = config.output.paginationMode === 'compact';
+  const showPageWarning = isCompactMode && pageEstimation && (pageEstimation.isFull || pageEstimation.isNearlyFull);
 
   // Sync local state when global config changes (e.g., loading a preset in the future)
   useEffect(() => {
@@ -162,7 +169,40 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({ config, setConfig, o
            cleanTo !== config.ayahRange[1];
   }, [localSurahNumber, dariAyahInput, sampaiAyahInput, config.surahNumber, config.ayahRange]);
 
+  // Get current ayahs for estimation
+  const currentAyahs = useMemo(() => {
+    return quranData[config.surahNumber].ayahs.filter(
+      (ayah) => ayah.ayah >= config.ayahRange[0] && ayah.ayah <= config.ayahRange[1]
+    );
+  }, [config.surahNumber, config.ayahRange]);
+
+  // Check which activities would overflow if added
+  const activityOverflowStatus = useMemo(() => {
+    if (!isCompactMode) return {};
+
+    const status: Record<ActivityType, boolean> = {} as Record<ActivityType, boolean>;
+    const allActivities = Object.keys(ACTIVITY_NAMES) as ActivityType[];
+
+    for (const activity of allActivities) {
+      if (config.activities.includes(activity)) {
+        status[activity] = false; // Already included, don't mark as overflow
+      } else {
+        status[activity] = wouldActivityOverflow(config.activities, activity, currentAyahs);
+      }
+    }
+
+    return status;
+  }, [config.activities, currentAyahs, isCompactMode]);
+
   const handleActivityToggle = (activity: ActivityType) => {
+    // If in compact mode and page is full, don't allow adding new activities
+    if (isCompactMode && !config.activities.includes(activity)) {
+      if (activityOverflowStatus[activity]) {
+        // Show a warning instead of adding
+        return;
+      }
+    }
+
     setConfig(prev => {
       const newActivities = prev.activities.includes(activity)
         ? prev.activities.filter(a => a !== activity)
@@ -304,13 +344,56 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({ config, setConfig, o
       </Section>
       
       <Section title="Pilih Aktivitas">
-        <div className="space-y-3">
-          {Object.entries(ACTIVITY_NAMES).map(([key, name]) => (
-            <label key={key} className="flex items-center space-x-3 cursor-pointer">
-              <input type="checkbox" checked={config.activities.includes(key as ActivityType)} onChange={() => handleActivityToggle(key as ActivityType)} className="h-4 w-4 rounded border-gray-300 text-teal-600 focus:ring-teal-500" />
-              <span className="text-sm text-gray-700">{name}</span>
-            </label>
-          ))}
+        <div className="space-y-4">
+          {/* Page Usage Meter - only show in compact mode */}
+          {isCompactMode && pageEstimation && (
+            <div className="mb-4 pb-4 border-b border-gray-200">
+              <PageUsageMeter estimation={pageEstimation} />
+            </div>
+          )}
+
+          {/* Page Full Warning */}
+          {showPageWarning && pageEstimation && (
+            <div className="mb-4">
+              <PageFullWarning estimation={pageEstimation} variant="banner" />
+            </div>
+          )}
+
+          <div className="space-y-3">
+            {Object.entries(ACTIVITY_NAMES).map(([key, name]) => {
+              const activity = key as ActivityType;
+              const isChecked = config.activities.includes(activity);
+              const wouldOverflow = isCompactMode && !isChecked && activityOverflowStatus[activity];
+
+              return (
+                <label
+                  key={key}
+                  className={`flex items-center space-x-3 ${wouldOverflow ? 'cursor-not-allowed opacity-60' : 'cursor-pointer'}`}
+                  title={wouldOverflow ? 'Tidak bisa ditambahkan - halaman akan penuh' : undefined}
+                >
+                  <input
+                    type="checkbox"
+                    checked={isChecked}
+                    onChange={() => handleActivityToggle(activity)}
+                    disabled={wouldOverflow}
+                    className="h-4 w-4 rounded border-gray-300 text-teal-600 focus:ring-teal-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                  />
+                  <span className={`text-sm ${wouldOverflow ? 'text-gray-400' : 'text-gray-700'}`}>
+                    {name}
+                    {wouldOverflow && (
+                      <span className="ml-2 text-xs text-red-500 font-medium">(Halaman penuh)</span>
+                    )}
+                  </span>
+                </label>
+              );
+            })}
+          </div>
+
+          {isCompactMode && pageEstimation && pageEstimation.isFull && (
+            <p className="text-xs text-gray-500 mt-3 p-2 bg-gray-50 rounded">
+              Tip: Kurangi jumlah ayat atau gunakan mode "Satu Aktivitas per Halaman" untuk menambah aktivitas.
+            </p>
+          )}
         </div>
       </Section>
 
