@@ -23,6 +23,73 @@ const Input: React.FC<{ label: string; value: string; onChange: (e: React.Change
   </div>
 );
 
+// Ayah Preview Component - Shows collapsible list of selected ayahs
+const AyahPreview: React.FC<{
+  surahNumber: number;
+  fromAyah: number;
+  toAyah: number;
+  maxAyah: number;
+}> = ({ surahNumber, fromAyah, toAyah, maxAyah }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const validFrom = Math.max(1, Math.min(fromAyah, maxAyah));
+  const validTo = Math.max(1, Math.min(toAyah, maxAyah));
+  const actualFrom = Math.min(validFrom, validTo);
+  const actualTo = Math.max(validFrom, validTo);
+
+  const selectedAyahs = quranData[surahNumber].ayahs.filter(
+    (ayah) => ayah.ayah >= actualFrom && ayah.ayah <= actualTo
+  );
+
+  return (
+    <div className="border border-gray-200 rounded-lg overflow-hidden">
+      <button
+        type="button"
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="w-full px-3 py-2 bg-gray-50 hover:bg-gray-100 flex items-center justify-between text-sm text-gray-700 transition-colors"
+      >
+        <span className="flex items-center gap-2">
+          <svg
+            className={`w-4 h-4 transition-transform ${isExpanded ? 'rotate-90' : ''}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+          Lihat Preview Ayat
+        </span>
+        <span className="text-xs text-gray-500">{selectedAyahs.length} ayat</span>
+      </button>
+
+      {isExpanded && (
+        <div className="max-h-64 overflow-y-auto p-3 space-y-3 bg-white">
+          {selectedAyahs.map((ayah) => (
+            <div
+              key={ayah.ayah}
+              className="p-2 bg-gray-50 rounded border-l-4 border-teal-400"
+            >
+              <div className="flex items-start gap-2">
+                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center font-medium">
+                  {ayah.ayah}
+                </span>
+                <div className="flex-1 min-w-0">
+                  <p className="text-right font-quran text-base leading-loose text-gray-800" dir="rtl">
+                    {ayah.text}
+                  </p>
+                  <p className="text-xs text-gray-500 mt-1 italic">
+                    {ayah.translation}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
 export const ControlPanel: React.FC<ControlPanelProps> = ({ config, setConfig, onExport, isExporting }) => {
   // Local state for inputs to avoid updating preview on every keystroke
   const [localSurahNumber, setLocalSurahNumber] = useState(config.surahNumber);
@@ -140,31 +207,99 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({ config, setConfig, o
                 </option>
               ))}
             </select>
+            <p className="text-xs text-gray-500 mt-1">
+              Total: {maxAyah} ayat
+            </p>
           </div>
+
+          {/* Quick Selection Buttons */}
+          <div>
+            <label className="block text-sm font-medium text-gray-600 mb-2">Pilihan Cepat</label>
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => { setDariAyahInput('1'); setSampaiAyahInput('5'); }}
+                disabled={maxAyah < 5}
+                className="px-3 py-1 text-xs rounded-full bg-teal-100 text-teal-700 hover:bg-teal-200 transition-colors disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+              >
+                Ayat 1-5
+              </button>
+              <button
+                type="button"
+                onClick={() => { setDariAyahInput('1'); setSampaiAyahInput('10'); }}
+                disabled={maxAyah < 10}
+                className="px-3 py-1 text-xs rounded-full bg-teal-100 text-teal-700 hover:bg-teal-200 transition-colors disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+              >
+                Ayat 1-10
+              </button>
+              <button
+                type="button"
+                onClick={() => { setDariAyahInput('1'); setSampaiAyahInput('15'); }}
+                disabled={maxAyah < 15}
+                className="px-3 py-1 text-xs rounded-full bg-teal-100 text-teal-700 hover:bg-teal-200 transition-colors disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+              >
+                Ayat 1-15
+              </button>
+              <button
+                type="button"
+                onClick={() => { setDariAyahInput('1'); setSampaiAyahInput(String(maxAyah)); }}
+                className="px-3 py-1 text-xs rounded-full bg-teal-600 text-white hover:bg-teal-700 transition-colors"
+              >
+                Semua ({maxAyah})
+              </button>
+            </div>
+          </div>
+
+          {/* Custom Range Input */}
           <div className="flex items-center space-x-2">
              <div className="w-1/2">
                 <label className="block text-sm font-medium text-gray-600 mb-1">Dari Ayat</label>
-                <input 
-                  type="number" 
-                  min="1" 
-                  max={maxAyah} 
-                  value={dariAyahInput} 
+                <input
+                  type="number"
+                  min="1"
+                  max={maxAyah}
+                  value={dariAyahInput}
                   onChange={(e) => setDariAyahInput(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 text-sm" 
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 text-sm"
                 />
              </div>
              <div className="w-1/2">
                 <label className="block text-sm font-medium text-gray-600 mb-1">Sampai Ayat</label>
-                <input 
-                  type="number" 
-                  min="1" 
-                  max={maxAyah} 
-                  value={sampaiAyahInput} 
+                <input
+                  type="number"
+                  min="1"
+                  max={maxAyah}
+                  value={sampaiAyahInput}
                   onChange={(e) => setSampaiAyahInput(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 text-sm" 
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 text-sm"
                 />
              </div>
           </div>
+
+          {/* Selected Range Summary */}
+          <div className="bg-teal-50 rounded-lg p-3 border border-teal-200">
+            <p className="text-sm text-teal-800">
+              <span className="font-medium">Ayat terpilih: </span>
+              {(() => {
+                const from = parseInt(dariAyahInput, 10) || 1;
+                const to = parseInt(sampaiAyahInput, 10) || maxAyah;
+                const validFrom = Math.max(1, Math.min(from, maxAyah));
+                const validTo = Math.max(1, Math.min(to, maxAyah));
+                const actualFrom = Math.min(validFrom, validTo);
+                const actualTo = Math.max(validFrom, validTo);
+                const count = actualTo - actualFrom + 1;
+                return `${actualFrom} - ${actualTo} (${count} ayat)`;
+              })()}
+            </p>
+          </div>
+
+          {/* Ayah Preview (Collapsible) */}
+          <AyahPreview
+            surahNumber={localSurahNumber}
+            fromAyah={parseInt(dariAyahInput, 10) || 1}
+            toAyah={parseInt(sampaiAyahInput, 10) || maxAyah}
+            maxAyah={maxAyah}
+          />
         </div>
       </Section>
       
